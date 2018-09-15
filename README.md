@@ -1,0 +1,2 @@
+# DhDesignpattern
+程杰版大话设计模式按章节用Java重新写了一遍代码，算是方便熟悉Java的用户
