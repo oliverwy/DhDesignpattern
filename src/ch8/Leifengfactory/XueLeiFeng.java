@@ -1,4 +1,4 @@
-package chh8.Leifengfactory;
+package ch8.Leifengfactory;
 
 public class XueLeiFeng {
 
