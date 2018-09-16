@@ -1,7 +1,7 @@
 package ch9.prototype;
 
 public class Client {
-<<<<<<< HEAD
+//<<<<<<< HEAD
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -11,9 +11,5 @@ public class Client {
 
 	}
 
-=======
-    ConcretePrototype p1 = new ConcretePrototype("I");
-    ConcretePrototype c1 = (ConcretePrototype) p1.Clone();
-	System.out.println();
->>>>>>> c8419c8a52c512e300f261ea04986559973a1601
+
 }
