@@ -1,49 +1,45 @@
 package ch8.factory;
 
 public interface IFactory {
-	Operation createOperation();
+    Operation createOperation();
 }
 
-class AddFactory implements IFactory
-{
+class AddFactory implements IFactory {
 
-	@Override
-	public Operation createOperation() {
-		// TODO Auto-generated method stub
-		return new OperationAdd();
-	}
-	
+    @Override
+    public Operation createOperation() {
+        // TODO Auto-generated method stub
+        return new OperationAdd();
+    }
+
 }
 
-class SubFactory implements IFactory
-{
+class SubFactory implements IFactory {
 
-	@Override
-	public Operation createOperation() {
-		// TODO Auto-generated method stub
-		return new OperationSub();
-	}
-	
+    @Override
+    public Operation createOperation() {
+        // TODO Auto-generated method stub
+        return new OperationSub();
+    }
+
 }
 
-class MulFactory implements IFactory
-{
+class MulFactory implements IFactory {
 
-	@Override
-	public Operation createOperation() {
-		// TODO Auto-generated method stub
-		return new OperationMul();
-	}
-	
+    @Override
+    public Operation createOperation() {
+        // TODO Auto-generated method stub
+        return new OperationMul();
+    }
+
 }
 
-class DivFactory implements IFactory
-{
+class DivFactory implements IFactory {
 
-	@Override
-	public Operation createOperation() {
-		// TODO Auto-generated method stub
-		return new OperationDiv();
-	}
-	
+    @Override
+    public Operation createOperation() {
+        // TODO Auto-generated method stub
+        return new OperationDiv();
+    }
+
 }
