@@ -1,13 +1,10 @@
 package ch15.reflectionplusconfigfactorydatabasevisit;
 
-import java.io.File;
-import java.util.List;
+import java.io.File;  
+import java.io.IOException;
 
-import org.dom4j.Document;
-import org.dom4j.DocumentException;
-import org.dom4j.Element;
-import org.dom4j.io.SAXReader;
-
+import org.ini4j.InvalidFileFormatException;
+import org.ini4j.Wini;
 public class DataAccessfactory {
 
 	// private final static String db="Sqlserver";
@@ -22,27 +19,14 @@ public class DataAccessfactory {
 		return objectstr;
 	}
 
-	public String getDatabaseConfig() throws DocumentException {
-		SAXReader saxReader = new SAXReader();
-		File inputFile = new File("src/appconfig.xml");
-		//System.out.println(inputFile);
-		Document document = saxReader.read(inputFile);
-		Element root = document.getRootElement();
-		System.out.println(root.getText());
-		Element e = (Element) root.selectSingleNode("/databaseconfig/dbtype");
-
-		// allSong节点下的Name节点的value
-		String db = e.getText();
-
-		return db;
-	}
-
 	public void setObjectstr(String objectstr) {
 		this.objectstr = objectstr;
 	}
 
-	public IFactory createDatabase() {
+	public IFactory createDatabase() throws InvalidFileFormatException, IOException {
 		IFactory databasefactory = null;
+		Wini ini = new Wini(new File("src/appconfig.ini"));
+		objectstr = ini.get("dbconfig", "dbtype"); 
 		try {
 			databasefactory = (IFactory) Class.forName(getPackagename() + '.' + objectstr).newInstance();
 		} catch (Exception e) {
