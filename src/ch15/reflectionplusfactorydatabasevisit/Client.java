@@ -9,7 +9,6 @@ public class Client {
 		Department dept=new Department();
 		IFactory databasefactory=null;
 		DataAccessfactory dd=new DataAccessfactory("SqlserverFactory");
-		System.out.println(dd.getObjectstr());
 		databasefactory=dd.createobj();
 		IUser iu=databasefactory.createUser();
 		iu.insert(user);

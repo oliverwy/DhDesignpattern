@@ -2,7 +2,6 @@ package ch15.reflectionplusconfigfactorydatabasevisit;
 
 import java.io.File;  
 import java.io.IOException;
-
 import org.ini4j.InvalidFileFormatException;
 import org.ini4j.Wini;
 public class DataAccessfactory {

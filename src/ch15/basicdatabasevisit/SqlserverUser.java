@@ -1,7 +1,5 @@
 package ch15.basicdatabasevisit;
 
-import javax.jws.soap.SOAPBinding.Use;
-
 public class SqlserverUser {
 	public void insert(User user) {
 		System.out.println("在SQLserver中添加一条记录");

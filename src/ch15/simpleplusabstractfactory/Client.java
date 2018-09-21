@@ -12,7 +12,7 @@ public class Client {
 		iu.insert(user);
 		iu.getUse(0);
 		
-		IDepatment id=new DataAccess().createDepartment();
+		IDepatment id=DataAccess.createDepartment();
 		id.insert(dept);
 		id.getDepartment(0);
 	}
