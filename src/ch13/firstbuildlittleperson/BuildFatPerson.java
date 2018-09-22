@@ -7,7 +7,6 @@ import java.awt.Graphics2D;
 
 class BuildFatPerson {
 	private Graphics g;
-//	
 	public BuildFatPerson(Graphics g) {
 		super();
 		this.g = g;
@@ -22,7 +21,6 @@ class BuildFatPerson {
 		g.drawLine(105, 130, 75, 150);// 左腿（画直线）
 		g.drawLine(125, 130, 150, 150);// 右腿（画直线）
 
-//		return this.g;
 	}
 	
 	public void buildFat()
