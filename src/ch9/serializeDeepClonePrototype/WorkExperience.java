@@ -9,6 +9,10 @@ import java.io.Serializable;
 //使用Serialize方法实现，
 //借鉴https://github.com/echoTheLiar/JavaCodeAcc/blob/master/src/designpattern/prototype/Resume.java
 public class WorkExperience implements Serializable { // 深度复制，看看如何处理复制复杂数据结构
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String wordate;
 	private String company;
 
@@ -31,6 +35,10 @@ public class WorkExperience implements Serializable { // 深度复制，看看�
 }
 
 class Resume implements Cloneable, Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String name;
 	private String sex;
 	private String age;

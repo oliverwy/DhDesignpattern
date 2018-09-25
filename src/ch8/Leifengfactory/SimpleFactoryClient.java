@@ -11,7 +11,7 @@ public class SimpleFactoryClient {
         LeiFeng studentc = SimpleFactory.createLeiFeng("学雷锋的大学生");
         studentc.Wash();
         LeiFeng studentd = SimpleFactory.createLeiFeng("社区志愿者");
-        studentc.BuyRice();
+        studentd.BuyRice();
     }
 
 }

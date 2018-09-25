@@ -1,6 +1,5 @@
 package ch22.loosecouplingcode;
 
-import org.omg.PortableServer.AdapterActivator;
 
 public class Client {
 

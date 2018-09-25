@@ -35,13 +35,10 @@ abstract class Decorator implements Component {
 }
 
 class ConcreteDecoratorA extends Decorator {
-    private String addedstate;
-
     @Override
     public void Operation() {
         // TODO Auto-generated method stub
         super.Operation();
-        addedstate = "New State";
         System.out.println("具体装饰对象A的操作");
     }
 }
