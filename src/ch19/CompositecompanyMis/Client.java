@@ -1,4 +1,4 @@
-package ch19.companyMis;
+package ch19.CompositecompanyMis;
 
 
 public class Client {

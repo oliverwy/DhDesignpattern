@@ -5,11 +5,10 @@ public class Singleton {
 	public static Singleton getInstance() {
 		return instance;
 	}
-
 	public Singleton() {
 		super();
-		// TODO Auto-generated constructor stub
-		System.out.println("创建Singleton:"+System.nanoTime());
+		System.out.println(""
+				+ "创建Singleton:"+System.nanoTime());
 	}
 
 }

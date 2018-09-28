@@ -11,5 +11,4 @@ public abstract class Client {
 			System.out.println("两个示例对象相同");
 		}
 	}
-
 }

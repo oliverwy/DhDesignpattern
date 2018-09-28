@@ -1,10 +1,10 @@
-package ch19.companyMis;
+package ch19.CompositecompanyMis;
 
 import java.util.Collections;
 
-public class HrDepartment extends Company {
+public class FinanceDepartment extends Company {
 
-	public HrDepartment(String name) {
+	public FinanceDepartment(String name) {
 		super(name);
 		// TODO Auto-generated constructor stub
 	}
@@ -30,7 +30,7 @@ public class HrDepartment extends Company {
 	@Override
 	public void lineOfDuty() {
 		// TODO Auto-generated method stub
-		System.out.printf("\n%s负责招聘培训管理",getName());
+		System.out.printf("\n%s负责财务收支管理",getName());
 	}
 
 }

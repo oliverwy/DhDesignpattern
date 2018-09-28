@@ -6,23 +6,16 @@ public class ConcreteBuilder2 extends Buider {
 		super();
 		this.product=new Product();
 	}
-
 	@Override
 	public void buildPartA() {
-		// TODO Auto-generated method stub
 		product.add("部件X");
 	}
-
 	@Override
 	public void buildPartB() {
-		// TODO Auto-generated method stub
 		product.add("部件Y");
 	}
-
 	@Override
 	public Product getResult() {
-		// TODO Auto-generated method stub
 		return product;
 	}
-
 }

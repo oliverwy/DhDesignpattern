@@ -1,9 +1,9 @@
-package ch19.firstcode;
+package ch19.Compositefirstcode;
 
 public class Client {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Component c=null;
 		Composite root =new Composite("root");
 		root.add(new Leaf("Leaf A"));
 		root.add(new Leaf("Leaf B"));
@@ -25,7 +25,6 @@ public class Client {
 		System.out.println("");
 		root.remove(leaf);
 		root.display(1);
-
 	}
 
 }
