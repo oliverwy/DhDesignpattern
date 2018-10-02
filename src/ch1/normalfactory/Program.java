@@ -28,12 +28,12 @@ public class Program {
 		}
 
 		System.out.println("请输入数字A：");
-		oper.setNumberA(scanner.nextDouble());
+//		oper.setNumberA(scanner.nextDouble());
 		System.out.println("请输入数字B：");
-		oper.setNumberB(scanner.nextDouble());
+//		oper.setNumberB(scanner.nextDouble());
 
-		double result = oper.getResult(); // 调用相应运算类中的getResult函数
-		System.out.println("结果是：" + result);
+//		double result = oper.getResult(); // 调用相应运算类中的getResult函数
+		//System.out.println("结果是：" + result);
 		scanner.close();
 	}
 
