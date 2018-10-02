@@ -1,4 +1,4 @@
-package ch24ch24chainofresponsibilitypattern.chainofresponsibilitythirdcode;
+package ch24chainofresponsibilitypattern.chainofresponsibilitythirdcode;
 
 
 public abstract class Manager {
