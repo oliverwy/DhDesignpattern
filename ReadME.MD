@@ -1,9 +1,2 @@
-echo "# DhDesignpattern" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/oliverwy/DhDesignpattern.git
-git push -u origin master
-
-git remote add origin https://github.com/oliverwy/DhDesignpattern.git
-git push -u origin master
+# DhDesignpattern
+程杰版大话设计模式按章节用Java重新写了一遍代码，算是方便熟悉Java的用户
