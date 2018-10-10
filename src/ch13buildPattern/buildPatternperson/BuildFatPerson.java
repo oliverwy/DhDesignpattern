@@ -2,6 +2,11 @@ package ch13buildPattern.buildPatternperson;
 import java.awt.Color;
 import java.awt.Graphics2D;
 public class BuildFatPerson extends PersonBuilder {
+	@Override
+	public void buildTail() {
+		// TODO Auto-generated method stub
+		
+	}
 	public BuildFatPerson(Graphics2D g, int lineWidth, Color color) {
 		super(g, lineWidth, color);
 	}

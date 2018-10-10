@@ -3,7 +3,6 @@ package ch19Compositepattern.Compositefirstcode;
 public class Client {
 
 	public static void main(String[] args) {
-		Component c=null;
 		Composite root =new Composite("root");
 		root.add(new Leaf("Leaf A"));
 		root.add(new Leaf("Leaf B"));

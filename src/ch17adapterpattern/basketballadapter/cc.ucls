@@ -1,87 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="ch17.basketballadapter.Player" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch17/basketballadapter/Player.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="173" width="139" x="140" y="117"/>    
+  <class id="1" language="java" name="ch17adapterpattern.basketballadapter.ForeignCenter" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch17adapterpattern/basketballadapter/ForeignCenter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="473" y="366"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="ch17.basketballadapter.Guards" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch17/basketballadapter/Player.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="119" width="114" x="-14" y="330"/>    
+  <class id="2" language="java" name="ch17adapterpattern.basketballadapter.Translator" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch17adapterpattern/basketballadapter/ForeignCenter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="577" y="179"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="ch17.basketballadapter.Striker" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch17/basketballadapter/Player.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="161" y="389"/>    
+  <class id="3" language="java" name="ch17adapterpattern.basketballadapter.Guards" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch17adapterpattern/basketballadapter/Player.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="693" y="364"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="ch17.basketballadapter.Center" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch17/basketballadapter/Player.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="286" y="390"/>    
+  <class id="4" language="java" name="ch17adapterpattern.basketballadapter.Striker" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch17adapterpattern/basketballadapter/Player.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="119" width="179" x="812" y="305"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="ch17.basketballadapter.Translator" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch17/basketballadapter/ForeignCenter.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="446" y="397"/>    
+  <class id="5" language="java" name="ch17adapterpattern.basketballadapter.Player" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch17adapterpattern/basketballadapter/Player.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="173" width="179" x="812" y="92"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="ch17.basketballadapter.ForeignCenter" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch17/basketballadapter/ForeignCenter.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="445" y="195"/>    
+  <class id="6" language="java" name="ch17adapterpattern.basketballadapter.Center" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch17adapterpattern/basketballadapter/Player.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="119" width="179" x="1031" y="305"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <generalization id="7">    
+  <class id="7" language="java" name="ch17adapterpattern.basketballadapter.Client" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch17adapterpattern/basketballadapter/Client.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="322" y="138"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="8">    
     <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="1"/>  
+    <end type="TARGET" refId="5"/>  
   </generalization>  
-  <association id="8">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="9" name="wjzf"/>      
-      <multiplicity id="10" minimum="0" maximum="1"/>    
+  <dependency id="9">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <generalization id="10">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <association id="11">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="12" name="wjzf"/>      
+      <multiplicity id="13" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
+    <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="11">    
-    <bendpoint x="43" y="314"/>    
-    <bendpoint x="206" y="313"/>    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="1"/>  
+  <generalization id="14">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="5"/>  
   </generalization>  
-  <generalization id="12">    
-    <bendpoint x="446" y="313"/>    
-    <bendpoint x="206" y="313"/>    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="13">    
+  <generalization id="15">    
     <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="1"/>  
+    <end type="TARGET" refId="5"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    

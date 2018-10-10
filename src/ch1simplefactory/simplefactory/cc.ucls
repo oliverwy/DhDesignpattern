@@ -4,52 +4,52 @@
   <class id="1" language="java" name="ch1simplefactory.simplefactory.OperationFactory" project="DhDesignpattern" 
     file="/DhDesignpattern/src/ch1simplefactory/simplefactory/OperationFactory.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="589" y="30"/>    
+    <position height="-1" width="-1" x="187" y="53"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="ch1.simplefactory.OperationAdd" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch1/simplefactory/Operation.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="514" y="221"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="3" language="java" name="ch1.simplefactory.OperationDiv" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch1/simplefactory/Operation.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="666" y="223"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="4" language="java" name="ch1.simplefactory.OperationSub" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch1/simplefactory/Operation.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="801" y="225"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="5" language="java" name="ch1simplefactory.simplefactory.Operation" project="DhDesignpattern" 
+  <class id="2" language="java" name="ch1simplefactory.simplefactory.Operation" project="DhDesignpattern" 
     file="/DhDesignpattern/src/ch1simplefactory/simplefactory/Operation.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="850" y="34"/>    
+    <position height="-1" width="-1" x="511" y="65"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="ch1.simplefactory.OperationMul" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch1/simplefactory/Operation.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="945" y="221"/>    
+  <class id="3" language="java" name="ch1simplefactory.simplefactory.OperationAdd" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch1simplefactory/simplefactory/Operation.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="146" x="296" y="377"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="ch1simplefactory.simplefactory.OperationDiv" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch1simplefactory/simplefactory/Operation.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="146" x="482" y="377"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="ch1simplefactory.simplefactory.OperationSub" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch1simplefactory/simplefactory/Operation.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="146" x="668" y="377"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="ch1simplefactory.simplefactory.OperationMul" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch1simplefactory/simplefactory/Operation.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="146" x="854" y="377"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,24 +57,40 @@
     </display>  
   </class>  
   <generalization id="7">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="5"/>  
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="2"/>  
   </generalization>  
   <dependency id="8">    
     <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="5"/>  
+    <end type="TARGET" refId="4"/>  
   </dependency>  
   <generalization id="9">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="5"/>  
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="2"/>  
   </generalization>  
   <generalization id="10">    
     <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="5"/>  
+    <end type="TARGET" refId="2"/>  
   </generalization>  
-  <generalization id="11">    
-    <end type="SOURCE" refId="6"/>    
+  <dependency id="11">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="12">    
+    <end type="SOURCE" refId="1"/>    
     <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="13">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="14">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <generalization id="15">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    

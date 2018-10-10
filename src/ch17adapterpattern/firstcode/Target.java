@@ -1,28 +1,32 @@
 package ch17adapterpattern.firstcode;
 
-public class Target {
-	public void request()
-	{
-		System.out.println("普通请求");
-	}
+//目标接口，或称为标准接口
+interface Target {
+	public void request();
 }
 
-class Adaptee
-{
-	public void specialRequest()
-	{
+class ConcreteTarget implements Target {
+    public void request() {
+        System.out.println("普通类 具有 普通功能...");
+    }
+}
+
+class Adaptee {
+	public void specialRequest() {
 		System.out.println("特殊请求");
 	}
 }
 
-class Adapter extends Target
-{
+class Adapter implements Target {
+	private Adaptee adaptee;
+
 	@Override
 	public void request() {
 		// TODO Auto-generated method stub
 		adaptee.specialRequest();
 	}
+	public Adapter (Adaptee adaptee) {
+        this.adaptee = adaptee;
+    }
 
-	private Adaptee adaptee =new Adaptee();
-	
 }

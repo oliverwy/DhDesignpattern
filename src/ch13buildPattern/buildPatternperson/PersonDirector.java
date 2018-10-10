@@ -15,5 +15,6 @@ class PersonDirector {
 		pb.buildArmRight();
 		pb.buildLegLeft();
 		pb.buildLegRight();
+		pb.buildTail();
 	}
 }

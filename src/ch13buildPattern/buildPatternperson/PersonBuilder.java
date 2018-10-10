@@ -23,6 +23,7 @@ abstract class PersonBuilder {
 	public abstract void buildArmRight();
 	public abstract void buildLegLeft();
 	public abstract void buildLegRight();
+	public abstract void buildTail();
 }
 
 

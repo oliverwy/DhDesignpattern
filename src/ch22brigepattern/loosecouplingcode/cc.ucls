@@ -1,63 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="ch22.loosecouplingcode.HandsetSoftware" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch22/loosecouplingcode/HandsetSoftware.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="101" width="139" x="232" y="173"/>    
+  <class id="1" language="java" name="ch22brigepattern.loosecouplingcode.HandsetGame" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch22brigepattern/loosecouplingcode/HandsetSoftware.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="101" width="171" x="436" y="354"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="ch22.loosecouplingcode.HandsetAdressList" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch22/loosecouplingcode/HandsetSoftware.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="101" width="152" x="151" y="314"/>    
+  <class id="2" language="java" name="ch22brigepattern.loosecouplingcode.HandsetBrandN" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch22brigepattern/loosecouplingcode/HandsetSoftware.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="101" width="171" x="345" y="213"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="ch22.loosecouplingcode.HandsetBrand" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch22/loosecouplingcode/HandsetSoftware.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="137" width="215" x="411" y="-4"/>    
+  <class id="3" language="java" name="ch22brigepattern.loosecouplingcode.HandsetBrand" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch22brigepattern/loosecouplingcode/HandsetSoftware.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="137" width="215" x="556" y="36"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="ch22.loosecouplingcode.HandsetGame" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch22/loosecouplingcode/HandsetSoftware.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="101" width="119" x="343" y="314"/>    
+  <class id="4" language="java" name="ch22brigepattern.loosecouplingcode.HandsetBrandM" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch22brigepattern/loosecouplingcode/HandsetSoftware.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="101" width="171" x="556" y="213"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="ch22.loosecouplingcode.HandsetBrandN" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch22/loosecouplingcode/HandsetSoftware.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="101" width="130" x="411" y="173"/>    
+  <class id="5" language="java" name="ch22brigepattern.loosecouplingcode.HandsetSoftware" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch22brigepattern/loosecouplingcode/HandsetSoftware.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="101" width="171" x="767" y="213"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="ch22.loosecouplingcode.HandsetMP3" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch22/loosecouplingcode/HandsetSoftware.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="101" width="118" x="502" y="314"/>    
+  <class id="6" language="java" name="ch22brigepattern.loosecouplingcode.HandsetMP3" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch22brigepattern/loosecouplingcode/HandsetSoftware.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="101" width="171" x="647" y="354"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="ch22.loosecouplingcode.HandsetBrandM" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch22/loosecouplingcode/HandsetSoftware.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="101" width="132" x="581" y="173"/>    
+  <class id="7" language="java" name="ch22brigepattern.loosecouplingcode.HandsetAdressList" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch22brigepattern/loosecouplingcode/HandsetSoftware.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="101" width="171" x="858" y="354"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -65,32 +72,32 @@
     </display>  
   </class>  
   <generalization id="8">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="9">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="10">    
     <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="1"/>  
+    <end type="TARGET" refId="5"/>  
   </generalization>  
-  <association id="11">    
+  <association id="9">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="12" name="software"/>      
-      <multiplicity id="13" minimum="0" maximum="1"/>    
+      <attribute id="10" name="software"/>      
+      <multiplicity id="11" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
+    <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="14">    
-    <end type="SOURCE" refId="7"/>    
+  <generalization id="12">    
+    <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
-  <generalization id="15">    
-    <end type="SOURCE" refId="5"/>    
+  <generalization id="13">    
+    <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <generalization id="14">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <generalization id="15">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="5"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
