@@ -19,10 +19,8 @@ class Adaptee {
 
 class Adapter implements Target {
 	private Adaptee adaptee;
-
 	@Override
 	public void request() {
-		// TODO Auto-generated method stub
 		adaptee.specialRequest();
 	}
 	public Adapter (Adaptee adaptee) {

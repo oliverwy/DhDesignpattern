@@ -4,7 +4,8 @@ import java.io.IOException;
 
 public class Client {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args)
+			throws IOException {
 		// TODO Auto-generated method stub
 		EncryptFacade f=new EncryptFacade();
 		System.out.println("加密文件：");

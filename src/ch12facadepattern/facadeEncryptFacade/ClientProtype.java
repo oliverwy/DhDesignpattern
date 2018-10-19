@@ -4,7 +4,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class ClientProtype {
-
 	public static void main(String[] args)
 			throws FileNotFoundException, IOException {
 		// TODO Auto-generated method stub
@@ -21,7 +20,5 @@ public class ClientProtype {
 		String enStr=reader.read("desprotype.txt");
 		String proStr=enDencrypt.deencrypyt(enStr);
 		writer.write(proStr, "srcprotype.txt");
-
 	}
-
 }

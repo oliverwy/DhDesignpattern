@@ -1,28 +1,20 @@
 package ch22brigepattern.brigepatternnormal;
 
-public abstract class Implementor {
-	public abstract void operation();
+public interface Implementor {
+	public abstract void subOperation();
 }
-
-class ConcreteImplementA extends Implementor
+class ConcreteImplementA implements Implementor
 {
-
 	@Override
-	public void operation() {
-		// TODO Auto-generated method stub
+	public void subOperation() {
 		System.out.println("具体实现A的方法执行");
 	}
-	
 }
 
-class ConcreteImplementB extends Implementor
+class ConcreteImplementB implements Implementor
 {
-
 	@Override
-	public void operation() {
-		// TODO Auto-generated method stub
+	public void subOperation() {
 		System.out.println("具体实现B的方法执行");
-
 	}
-	
 }
