@@ -8,8 +8,8 @@ public class Client {
 		o.attach(new ConcreteElementA());
 		o.attach(new ConcreteElementB());
 		
-		ConreteVisitor1 v1=new ConreteVisitor1();
-		ConreteVisitor2 v2=new ConreteVisitor2();
+		Vistor v1=new ConreteVisitor1();
+		Vistor v2=new ConreteVisitor2();
 		
 		o.display(v1);
 		o.display(v2);

@@ -1,7 +1,6 @@
 package ch20iteratorpattern.firstcode;
 
 public class Client {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ConcreteAggregate a=new ConcreteAggregate();
@@ -14,7 +13,6 @@ public class Client {
 		a.insert(6, "乘客A");
 		a.insert(7, "乘客B");
 		a.insert(8, "老人");
-		
 		Iterator i=new ConcreteIterator(a);
 		Object item =i.first();
 		while (!i.isDone())
@@ -23,5 +21,4 @@ public class Client {
 			i.next();
 		}
 	}
-
 }

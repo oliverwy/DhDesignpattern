@@ -2,9 +2,6 @@ package ch20iteratorpattern.firstcode;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.text.DefaultEditorKit.InsertBreakAction;
-
 public class ConcreteAggregate implements Aggregate {
 	private List<Object> items=new ArrayList<Object>();
 	@Override

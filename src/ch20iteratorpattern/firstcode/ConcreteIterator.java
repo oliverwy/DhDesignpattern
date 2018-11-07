@@ -8,16 +8,12 @@ public class ConcreteIterator implements Iterator {
 		super();
 		this.aggregate = aggregate;
 	}
-
 	@Override
 	public Object first() {
-		// TODO Auto-generated method stub
 		return aggregate.getItem(0);
 	}
-
 	@Override
 	public Object next() {
-		// TODO Auto-generated method stub
 		Object ret=null;
 		current++;
 		if(current<aggregate.count())
@@ -26,16 +22,12 @@ public class ConcreteIterator implements Iterator {
 		}
 		return ret;
 	}
-
 	@Override
 	public boolean isDone() {
-		// TODO Auto-generated method stub
 		return current>=aggregate.count() ? true:false;
 	}
-
 	@Override
 	public Object currentItem() {
-		// TODO Auto-generated method stub
 		return aggregate.getItem(current);
 	}
 
