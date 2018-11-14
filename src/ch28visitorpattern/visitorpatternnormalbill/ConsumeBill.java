@@ -11,7 +11,7 @@ public class ConsumeBill implements Bill {
 	}
 	// 不同人不同视角
 	public void accept(AccountBookViewer viewer) {
-		viewer.view(this);
+		viewer.consumeView(this);
 	}
 	public double getAmount() {
 		return amount;

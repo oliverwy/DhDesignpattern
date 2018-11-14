@@ -12,7 +12,6 @@ public abstract class Command {
 	abstract public void excute();
 }
 
-
 class Receiver
 {
 	public void action()
@@ -23,18 +22,14 @@ class Receiver
 
 class ConcreteCommand extends Command
 {
-
 	public ConcreteCommand(Receiver receiver) {
 		super(receiver);
-		// TODO Auto-generated constructor stub
 	}
-
 	@Override
 	public void excute() {
 		// TODO Auto-generated method stub
 		receiver.action();
 	}
-	
 }
 
 class Invoker

@@ -1,7 +1,6 @@
 package ch28visitorpattern.visitorpatternnormal;
 
 public class Client {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ObjectStructure o=new ObjectStructure();
@@ -14,5 +13,4 @@ public class Client {
 		o.display(v1);
 		o.display(v2);
 	}
-
 }

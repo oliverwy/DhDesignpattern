@@ -4,8 +4,8 @@ package ch28visitorpattern.visitorpatternnormalbill;
 //每个角色对不同元素的视角接口
 public interface AccountBookViewer {
 	  //查看消费的单子
-    void view(ConsumeBill bill);
+    void consumeView(ConsumeBill bill);
     
     //查看收入的单子
-    void view(IncomeBill bill);
+    void incomeView(IncomeBill bill);
 }

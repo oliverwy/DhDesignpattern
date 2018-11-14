@@ -1,8 +1,10 @@
 package ch28visitorpattern.visitorpatternnormal;
 
 public abstract class Vistor {
-	public abstract void visitConcreteElementA(ConcreteElementA concreteEelmentsA);
-	public abstract void visitConcreteElementB(ConcreteElementB concreteEelmentsB);
+	public abstract void visitConcreteElementA(
+			Element concreteEelmentsA);
+	public abstract void visitConcreteElementB(
+			Element concreteEelmentsB);
 }
 
 

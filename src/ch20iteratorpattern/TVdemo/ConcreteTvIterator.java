@@ -18,6 +18,7 @@ public class ConcreteTvIterator implements TvIterator {
 	}
 	@Override
 	public Chanel firstChanel() {
+		current=0;
 		return aggregate.getItem(0);
 	}
 	@Override

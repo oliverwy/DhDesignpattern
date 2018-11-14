@@ -1,81 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="ch23.commandpatternloosecoupling.Barbecuer" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch23/commandpatternloosecoupling/Barbecuer.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="233" y="129"/>    
+  <class id="1" language="java" name="ch23commandpattern.commandpatternloosecoupling.BakeMuttonCommand" 
+    project="DhDesignpattern" file="/DhDesignpattern/src/ch23commandpattern/commandpatternloosecoupling/Command.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="649" y="332"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="ch23.commandpatternloosecoupling.BakeMuttonCommand" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch23/commandpatternloosecoupling/Command.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="434" y="370"/>    
+  <class id="2" language="java" name="ch23commandpattern.commandpatternloosecoupling.BakeChickenWing" 
+    project="DhDesignpattern" file="/DhDesignpattern/src/ch23commandpattern/commandpatternloosecoupling/Command.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="903" y="328"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="ch23.commandpatternloosecoupling.Command" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch23/commandpatternloosecoupling/Command.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="533" y="124"/>    
+  <class id="3" language="java" name="ch23commandpattern.commandpatternloosecoupling.Command" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch23commandpattern/commandpatternloosecoupling/Command.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="728" y="103"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="ch23.commandpatternloosecoupling.BakeChickenWing" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch23/commandpatternloosecoupling/Command.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="666" y="369"/>    
+  <class id="4" language="java" name="ch23commandpattern.commandpatternloosecoupling.Barbecuer" 
+    project="DhDesignpattern" file="/DhDesignpattern/src/ch23commandpattern/commandpatternloosecoupling/Barbecuer.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="378" y="315"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="ch23.commandpatternloosecoupling.Waiter" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch23/commandpatternloosecoupling/Waiter.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="798" y="120"/>    
+  <class id="5" language="java" name="ch23commandpattern.commandpatternloosecoupling.Waiter" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch23commandpattern/commandpatternloosecoupling/Waiter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="414" y="87"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <generalization id="6">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="3"/>  
-  </generalization>  
+  <class id="6" language="java" name="ch23commandpattern.commandpatternloosecoupling.Client" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch23commandpattern/commandpatternloosecoupling/Client.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="101" width="246" x="-43" y="147"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
   <generalization id="7">    
-    <end type="SOURCE" refId="2"/>    
+    <end type="SOURCE" refId="1"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
-  <dependency id="8">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <association id="9">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="10" name="receiver"/>      
-      <multiplicity id="11" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="12">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <association id="13">    
+  <association id="8">    
     <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="14" name="command"/>      
-      <multiplicity id="15" minimum="0" maximum="1"/>    
+      <attribute id="9" name="command"/>      
+      <multiplicity id="10" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="11">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <dependency id="12">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="13">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <association id="14">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="15" name="receiver"/>      
+      <multiplicity id="16" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
