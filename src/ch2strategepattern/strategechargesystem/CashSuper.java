@@ -2,7 +2,6 @@ package ch2strategepattern.strategechargesystem;
 
 public interface CashSuper {
     public abstract double acceptCash(double money);
-
 }
 
 class CashNorml implements CashSuper {

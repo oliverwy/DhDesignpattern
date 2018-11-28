@@ -9,7 +9,7 @@ public class IncomeBill implements Bill {
 		this.amount = amount;
 		this.item = item;
 	}
-	public void accept(AccountBookViewer viewer) {
+	public void openBy(AccountBookViewer viewer) {
 		viewer.incomeView(this);
 	}
 	public double getAmount() {

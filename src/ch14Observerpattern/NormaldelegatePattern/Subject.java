@@ -9,13 +9,16 @@ public class Subject {
 	public void attach(String method, Object obj, Object[] params) {
 		Event e = new Event(obj, method, params);
 		if (observers.size() > 0) {
-			for (int x = 0; x < observers.size(); x++) {
+			int x;
+			for ( x= 0; x < observers.size(); x++) {
 				Event event = (Event) observers.get(x);
-				if (!((e.getParams() == event.getParams()) && (e.getMethodName() == event.getMethodName())
+				if (((e.getParams() == event.getParams()) && (e.getMethodName() == event.getMethodName())
 						&& (e.getObject() == event.getObject()))) {
-					this.observers.add(e);
+					break;
 				}
 			}
+			if (x>=observers.size())
+				this.observers.add(e);
 		} else
 			this.observers.add(e);
 	}

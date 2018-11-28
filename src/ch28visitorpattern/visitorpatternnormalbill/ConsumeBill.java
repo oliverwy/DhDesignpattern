@@ -10,7 +10,7 @@ public class ConsumeBill implements Bill {
 		this.item = item;
 	}
 	// 不同人不同视角
-	public void accept(AccountBookViewer viewer) {
+	public void openBy(AccountBookViewer viewer) {
 		viewer.consumeView(this);
 	}
 	public double getAmount() {

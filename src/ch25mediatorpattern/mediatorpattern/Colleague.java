@@ -27,40 +27,29 @@ abstract class cColleague implements Colleague {
 
 class ConcreteColleague1 extends cColleague
 {
-
 	public ConcreteColleague1(Mediator mediator) {
 		super(mediator);
-		// TODO Auto-generated constructor stub
 	}
-	
 	public void send(String message)
 	{
 		mediator.send(message, this);
 	}
-	
 	public void notifys(String string)
 	{
 		System.out.println("同事1得到信息："+string);
 	}
-	
 }
-
 class ConcreteColleague2 extends cColleague
 {
-
 	public ConcreteColleague2(Mediator mediator) {
 		super(mediator);
-		// TODO Auto-generated constructor stub
 	}
 	public void send(String message)
 	{
 		mediator.send(message, this);
 	}
-	
 	public void notifys(String string)
 	{
 		System.out.println("同事2得到信息："+string);
 	}
-
-	
 }

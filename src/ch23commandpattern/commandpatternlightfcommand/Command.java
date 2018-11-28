@@ -79,23 +79,3 @@ class Line {
 	}
 }
 
-//class Invoker
-//{
-//	private List<Command> commands=new ArrayList<Command>();
-//	public void setCommand(Command command)
-//	{
-//		commands.add(command);
-//	}
-//	public void removeCommand(Command command)
-//	{
-//		commands.remove(command);
-//	}
-//	
-//	public void notifys()
-//	{
-//		for (Command cmd:commands)
-//		{
-//			cmd.excute();
-//		}
-//	}
-//}

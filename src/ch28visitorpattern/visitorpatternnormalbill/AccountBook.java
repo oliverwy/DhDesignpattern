@@ -13,7 +13,7 @@ public class AccountBook {
 	// 供账本的查看者查看账本
 	public void show(AccountBookViewer viewer) {
 		for (Bill bill : billList) {
-			bill.accept(viewer);
+			bill.openBy(viewer);
 		}
 	}
 }
