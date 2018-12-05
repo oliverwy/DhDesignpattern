@@ -1,5 +1,6 @@
 package ch16statepattern.elevatorfirstcode;
 
+
 public class Elevator {
 	public static final int STOPOPENED_STATE = 1; // 停止门打开状态
 	public static final int STOPCLOSED_STATE = 2;// 停止门关闭状态
@@ -34,6 +35,7 @@ public class Elevator {
 			break;
 		case STOPCLOSED_STATE:
 			string = "我现在即将开门，两秒后可以出入电梯了";
+			this.state=STOPOPENED_STATE;
 			break;
 		case STOPOPENED_STATE:
 			string = "电梯门已打开，不要重复发送Open指令";
@@ -56,6 +58,7 @@ public class Elevator {
 			break;
 		case STOPOPENED_STATE:
 			string = "电梯门即将关闭，请注意安全";
+			this.state=STOPCLOSED_STATE;
 			break;
 		case LIFTOFF_STATE:
 			string = "停用!";
@@ -77,8 +80,12 @@ public class Elevator {
 		case STOPCLOSED_STATE:
 			if (direction == UPWARD) {
 				string = "电梯门已关闭，将开始继续上行";
+				this.state=RUNING_STATE;
+				this.direction=UPWARD;
 			} else {
 				string = "电梯门已关闭，将开始继续下行！";
+				this.state=RUNING_STATE;
+				this.direction=DOWNWWARD;
 			}
 			break;
 		case STOPOPENED_STATE:
@@ -100,9 +107,13 @@ public class Elevator {
 		switch (state) {
 		case RUNING_STATE:
 			if (direction == UPWARD) {
-				string = "正在上行中，不能响应STOP指令，请稍等！";
+				string = "正在上行中，准备停止，请稍等！";
+				this.state=STOPCLOSED_STATE;
+				this.direction=UPWARD;
 			} else {
-				string = "正在下行中，不能响应STOP指令，请稍等！";
+				string = "正在下行中，准备停止，请稍等！";
+				this.state=STOPCLOSED_STATE;
+				this.direction=DOWNWWARD;
 			}
 			break;
 		case STOPCLOSED_STATE:
@@ -129,23 +140,21 @@ public class Elevator {
 }
 
 abstract class AbstractState {
-	abstract public void open();
-
-	abstract public void close();
-
-	abstract public void start();
-
-	abstract public void stop();
+	abstract public void open(Elevator e);
+	abstract public void close(Elevator e);
+	abstract public void start(Elevator e);
+	abstract public void stop(Elevator e);
+	abstract public void upward(Elevator e);
+	abstract public void downward(Elevator e);
 }
 
 // 或者
 
 interface AbstractStateInteface {
-	public void open();
-
-	public void close();
-
-	public void start();
-
-	public void stop();
-}
+	public void open(Elevator e);
+	public void close(Elevator e);
+	public void start(Elevator e);
+	public void stop(Elevator e);
+	public void upward(Elevator e);
+	public void downward(Elevator e);
+	}

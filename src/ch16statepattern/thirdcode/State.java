@@ -5,24 +5,18 @@ public abstract class State {
 }
 class ConcreteStateA extends State
 {
-
 	@Override
 	public void handle(Context context) {
-		// TODO Auto-generated method stub
 		context.setState(new ConcreteStateB());
 	}
-	
 }
 
 class ConcreteStateB extends State
 {
-
 	@Override
 	public void handle(Context context) {
-		// TODO Auto-generated method stub
 		context.setState(new ConcreteStateA());
 	}
-	
 }
 
 class Context

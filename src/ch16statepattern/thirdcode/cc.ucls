@@ -3,7 +3,7 @@
   associations="false" dependencies="true" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="ch16statepattern.thirdcode.ConcreteStateB" project="DhDesignpattern" 
     file="/DhDesignpattern/src/ch16statepattern/thirdcode/State.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="70" width="137" x="357" y="322"/>    
+    <position height="-1" width="-1" x="553" y="257"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="ch16statepattern.thirdcode.Context" project="DhDesignpattern" 
     file="/DhDesignpattern/src/ch16statepattern/thirdcode/State.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="124" width="132" x="397" y="542"/>    
+    <position height="-1" width="-1" x="266" y="141"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="ch16statepattern.thirdcode.ConcreteStateA" project="DhDesignpattern" 
     file="/DhDesignpattern/src/ch16statepattern/thirdcode/State.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="70" width="137" x="397" y="432"/>    
+    <position height="-1" width="-1" x="390" y="259"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="ch16statepattern.thirdcode.State" project="DhDesignpattern" 
     file="/DhDesignpattern/src/ch16statepattern/thirdcode/State.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="70" width="137" x="515" y="212"/>    
+    <position height="-1" width="-1" x="464" y="140"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,20 +39,18 @@
   </class>  
   <class id="5" language="java" name="ch16statepattern.thirdcode.Client" project="DhDesignpattern" 
     file="/DhDesignpattern/src/ch16statepattern/thirdcode/Client.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="163" y="213"/>    
+    <position height="-1" width="-1" x="86" y="139"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <dependency id="6">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
+  <generalization id="6">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
   <dependency id="7">    
-    <bendpoint x="564" y="432"/>    
-    <bendpoint x="564" y="322"/>    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="4"/>  
   </dependency>  
@@ -64,24 +62,6 @@
     <end type="SOURCE" refId="1"/>    
     <end type="TARGET" refId="4"/>  
   </generalization>  
-  <generalization id="10">    
-    <bendpoint x="524" y="322"/>    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="4"/>  
-  </generalization>  
-  <dependency id="11">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="2"/>  
-  </dependency>  
-  <dependency id="12">    
-    <bendpoint x="366" y="432"/>    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="2"/>  
-  </dependency>  
-  <dependency id="13">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
   <classifier-display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
