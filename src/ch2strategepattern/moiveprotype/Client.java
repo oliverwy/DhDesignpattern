@@ -18,6 +18,10 @@ public class Client {
         mt.setType("children"); //儿童票  
         currentPrice = mt.getPrice();  
         System.out.println("折后价为：" + currentPrice);  
+        mt.setType("vip"); //儿童票  
+        currentPrice = mt.getPrice();  
+        System.out.println("折后价为：" + currentPrice);  
+ 
     }  
 } 
 

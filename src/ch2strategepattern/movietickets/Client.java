@@ -26,5 +26,10 @@ public class Client {
 		mt.setDiscount(discount);
 		currentPrice=mt.getPrice();
 		System.out.println("折后价为：" + currentPrice);
+		System.out.println("---------------------------------");
+		discount=new VVIPDiscount();
+		mt.setDiscount(discount);
+		currentPrice=mt.getPrice();
+		System.out.println("折后价为：" + currentPrice);
 	}
 }

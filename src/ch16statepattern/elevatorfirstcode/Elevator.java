@@ -1,0 +1,151 @@
+package ch16statepattern.elevatorfirstcode;
+
+public class Elevator {
+	public static final int STOPOPENED_STATE = 1; // 停止门打开状态
+	public static final int STOPCLOSED_STATE = 2;// 停止门关闭状态
+	public static final int LIFTOFF_STATE = 3; // 停止服务状态
+	public static final int RUNING_STATE = 4;// 运行状态
+	public static final int UPWARD = 11; // 向上上行
+	public static final int DOWNWWARD = 12; // 下行
+	private int direction;
+	private int state;
+
+	public int getState() {
+		return state;
+	}
+
+	public void setState(int state) {
+		this.state = state;
+	}
+
+	public int getDirection() {
+		return direction;
+	}
+
+	public void setDirection(int direction) {
+		this.direction = direction;
+	}
+
+	public void open() {
+		String string = "";
+		switch (state) {
+		case RUNING_STATE:
+			string = "我正在运动状态，不能开门，请不要强行电梯门";
+			break;
+		case STOPCLOSED_STATE:
+			string = "我现在即将开门，两秒后可以出入电梯了";
+			break;
+		case STOPOPENED_STATE:
+			string = "电梯门已打开，不要重复发送Open指令";
+			break;
+		case LIFTOFF_STATE:
+			string = "停用!";
+			break;
+		}
+		System.out.println(string);
+	}
+
+	public void close() {
+		String string = "";
+		switch (state) {
+		case RUNING_STATE:
+			string = "我正在运动状态，门已关闭,不要重复发Close指令";
+			break;
+		case STOPCLOSED_STATE:
+			string = "电梯门已关闭，可以响应其他指令，请不要重复发close指令";
+			break;
+		case STOPOPENED_STATE:
+			string = "电梯门即将关闭，请注意安全";
+			break;
+		case LIFTOFF_STATE:
+			string = "停用!";
+			break;
+		}
+		System.out.println(string);
+	}
+
+	public void start() {
+		String string = "";
+		switch (state) {
+		case RUNING_STATE:
+			if (direction == UPWARD) {
+				string = "正在上行状态，已经运行，不能再次发送start指令，请等待";
+			} else {
+				string = "正在下行状态，已经运行，不能再次发送start指令，请等待";
+			}
+			break;
+		case STOPCLOSED_STATE:
+			if (direction == UPWARD) {
+				string = "电梯门已关闭，将开始继续上行";
+			} else {
+				string = "电梯门已关闭，将开始继续下行！";
+			}
+			break;
+		case STOPOPENED_STATE:
+			if (direction == UPWARD) {
+				string = "正在上行中，电梯门在打开状态，不能启动电梯 start指令";
+			} else {
+				string = "正在下行中，电梯门在打开状态，不能启动电梯 start指令";
+			}
+			break;
+		case LIFTOFF_STATE:
+			string = "停用!";
+			break;
+		}
+		System.out.println(string);
+	}
+
+	public void stop() {
+		String string = "";
+		switch (state) {
+		case RUNING_STATE:
+			if (direction == UPWARD) {
+				string = "正在上行中，不能响应STOP指令，请稍等！";
+			} else {
+				string = "正在下行中，不能响应STOP指令，请稍等！";
+			}
+			break;
+		case STOPCLOSED_STATE:
+			if (direction == UPWARD) {
+				string = "正在上行中，已到楼层停止，不能反复发送STOP指令";
+			} else {
+				string = "正在下行中，已到楼层停止，不能反复发送STOP指令";
+			}
+			break;
+		case STOPOPENED_STATE:
+			if (direction == UPWARD) {
+				string = "正在上行中，电梯门已打开，不能反复发送STOP指令";
+			} else {
+				string = "正在下行中，电梯门已打开，不能反复发送STOP指令";
+			}
+			break;
+		case LIFTOFF_STATE:
+			string = "停用!";
+			break;
+		}
+		System.out.println(string);
+	}
+
+}
+
+abstract class AbstractState {
+	abstract public void open();
+
+	abstract public void close();
+
+	abstract public void start();
+
+	abstract public void stop();
+}
+
+// 或者
+
+interface AbstractStateInteface {
+	public void open();
+
+	public void close();
+
+	public void start();
+
+	public void stop();
+}
