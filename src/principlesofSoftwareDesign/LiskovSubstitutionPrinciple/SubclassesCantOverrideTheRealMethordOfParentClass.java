@@ -40,6 +40,11 @@ class Son2 extends Parent {
 		return a^b;
 	}
 
+    //	子类可以任意添加自己的方法
+    public int Son2Metshord(int a, int b) {
+        return a * b * a * b;
+    }
+
 }
 
 
@@ -53,13 +58,19 @@ public class SubclassesCantOverrideTheRealMethordOfParentClass {
 		Parent p=new Parent();
 		System.out.println("使用父类完成计算");
 		System.out.println(p.Plus(1, 4));
-		// 1: 使用子类替换掉父类
+        //使用子类指针调用子类定义的方法，没问题，当然调用其继承的方法更没问
 		Son2 son2 = new Son2();
+        System.out.println(son2.Son2Metshord(2, 4));
+        // 1: 使用子类替换掉父类
 		p=son2;
 		System.out.println("使用子类替换父类完成计算");
 		System.out.println(p.Plus(1, 4));
-		//System.out.println(p.OverrideOper(2, 4));
-		//System.out.println(son2.OverrideOper(1, 2));
+        System.out.println(p.OverrideOper(2, 4));
+        System.out.println("如果使用子类替换父类了，这个时候只能调用父类里面定义的方法，而在子类里面定义的方法不能通过父类类型的指针调用");
+        //如果使用自理替换父类了，这个时候只能调用父类里面导入方法，而在子类里面定义的方法不能通过父类类型的指针调用
+        //System.out.println(p.Son2Metshord(2,4)); 就会报错
+        System.out.println(son2.OverrideOper(1, 2));
+
 		//如果使用子类1就不可能，为什么他违反了里氏替换的子类不能完全复写父类的实方法
 		System.out.println("如果使用子类1就不可能父类，为什么他违反了里氏替换的子类不能完全复写父类的实方法");
 		Son1 son1=new Son1();
