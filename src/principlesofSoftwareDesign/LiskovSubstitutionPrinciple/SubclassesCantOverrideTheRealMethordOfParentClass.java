@@ -1,6 +1,6 @@
 package principlesofSoftwareDesign.LiskovSubstitutionPrinciple;
 
-//子类不能覆盖父类的实方法
+//子类不能完全覆盖父类的实方法
 //父类
 class Parent {
 	// 父类中已经实现好的方法: 求和功能 如果为了满足里氏替换子类就不能覆盖这个方法
@@ -45,23 +45,28 @@ class Son2 extends Parent {
 
 
 //测试类：使用子类替换掉父类的新程序
-public class Test1 {
+public class SubclassesCantOverrideTheRealMethordOfParentClass {
 
 	public static void main(String[] args) {
 
 //		使用父类完成的计任务
 		Parent p=new Parent();
 		System.out.println("使用父类完成计算");
-		
+		System.out.println(p.Plus(1, 4));
 		// 1: 使用子类替换掉父类
-		Son2 son1 = new Son2();
-		System.out.println(son1.OverrideOper(1, 2));
-		Parent fath=null;
-		fath=son1;
-		// 2: 原程序需要的是求和功能，此时同一方法却变成了相减功能。
-		int num = fath.OverrideOper(1, 2);
+		Son2 son2 = new Son2();
+		p=son2;
+		System.out.println("使用子类替换父类完成计算");
+		System.out.println(p.Plus(1, 4));
+		//System.out.println(p.OverrideOper(2, 4));
+		//System.out.println(son2.OverrideOper(1, 2));
+		//如果使用子类1就不可能，为什么他违反了里氏替换的子类不能完全复写父类的实方法
+		System.out.println("如果使用子类1就不可能父类，为什么他违反了里氏替换的子类不能完全复写父类的实方法");
+		Son1 son1=new Son1();
+		p=son1;
+		int num = p.Plus(1, 4);
 		System.out.println(num);
-		System.out.println(fath.OverrideOper(2, 3));
+		System.out.println(p.OverrideOper(2, 3));
 
 	}
 
