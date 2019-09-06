@@ -39,7 +39,7 @@ public class ChargeSystem {
      */
     private void initialize() {
         frame = new JFrame();
-        frame.setTitle("上场收费系统");
+        frame.setTitle("商场收费系统");
         frame.setBounds(100, 100, 450, 300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(null);

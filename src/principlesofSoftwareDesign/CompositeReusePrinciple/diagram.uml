@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="499.0" y="708.0">principlesofSoftwareDesign.CompositeReusePrinciple.FlyWithWings</node>
+    <node x="0.0" y="171.0">principlesofSoftwareDesign.CompositeReusePrinciple.MallarDuck</node>
+    <node x="316.0" y="708.0">principlesofSoftwareDesign.CompositeReusePrinciple.Qucak</node>
+    <node x="0.0" y="485.5">principlesofSoftwareDesign.CompositeReusePrinciple.FDecoyDuck</node>
+    <node x="285.0" y="0.0">principlesofSoftwareDesign.CompositeReusePrinciple.Duck</node>
+    <node x="0.0" y="708.0">principlesofSoftwareDesign.CompositeReusePrinciple.Squeak</node>
+    <node x="158.0" y="708.0">principlesofSoftwareDesign.CompositeReusePrinciple.MuteQuack</node>
+    <node x="190.0" y="171.0">principlesofSoftwareDesign.CompositeReusePrinciple.DecoyDuck</node>
+    <node x="570.0" y="171.0">principlesofSoftwareDesign.CompositeReusePrinciple.RubberDuck</node>
+    <node x="166.0" y="462.0">principlesofSoftwareDesign.CompositeReusePrinciple.FMallarDuck</node>
+    <node x="585.0" y="606.0">principlesofSoftwareDesign.CompositeReusePrinciple.Flyable</node>
+    <node x="661.0" y="708.0">principlesofSoftwareDesign.CompositeReusePrinciple.FlyNoWay</node>
+    <node x="158.0" y="606.0">principlesofSoftwareDesign.CompositeReusePrinciple.Quackable</node>
+    <node x="380.0" y="171.0">principlesofSoftwareDesign.CompositeReusePrinciple.RedaHeadDuck</node>
+    <node x="380.0" y="462.0">principlesofSoftwareDesign.CompositeReusePrinciple.FRubberDuck</node>
+    <node x="186.0" y="337.0">principlesofSoftwareDesign.CompositeReusePrinciple.FDuck</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="principlesofSoftwareDesign.CompositeReusePrinciple.MallarDuck" target="principlesofSoftwareDesign.CompositeReusePrinciple.Duck">
+      <point x="0.0" y="-60.5" />
+      <point x="85.0" y="141.0" />
+      <point x="306.25" y="141.0" />
+      <point x="-63.75" y="60.5" />
+    </edge>
+    <edge source="principlesofSoftwareDesign.CompositeReusePrinciple.Qucak" target="principlesofSoftwareDesign.CompositeReusePrinciple.Quackable">
+      <point x="0.0" y="-26.0" />
+      <point x="385.0" y="683.0" />
+      <point x="273.0" y="683.0" />
+      <point x="46.0" y="26.0" />
+    </edge>
+    <edge source="principlesofSoftwareDesign.CompositeReusePrinciple.FlyWithWings" target="principlesofSoftwareDesign.CompositeReusePrinciple.Flyable">
+      <point x="0.0" y="-26.0" />
+      <point x="570.0" y="683.0" />
+      <point x="615.5" y="683.0" />
+      <point x="-30.5" y="26.0" />
+    </edge>
+    <edge source="principlesofSoftwareDesign.CompositeReusePrinciple.RedaHeadDuck" target="principlesofSoftwareDesign.CompositeReusePrinciple.Duck">
+      <point x="0.0" y="-60.5" />
+      <point x="465.0" y="151.0" />
+      <point x="391.25" y="151.0" />
+      <point x="21.25" y="60.5" />
+    </edge>
+    <edge source="principlesofSoftwareDesign.CompositeReusePrinciple.FDecoyDuck" target="principlesofSoftwareDesign.CompositeReusePrinciple.FDuck">
+      <point x="0.0" y="-26.0" />
+      <point x="73.0" y="437.0" />
+      <point x="211.66666666666669" y="437.0" />
+      <point x="-51.333333333333314" y="37.5" />
+    </edge>
+    <edge source="principlesofSoftwareDesign.CompositeReusePrinciple.FRubberDuck" target="principlesofSoftwareDesign.CompositeReusePrinciple.FDuck">
+      <point x="0.0" y="-49.5" />
+      <point x="477.0" y="437.0" />
+      <point x="314.33333333333337" y="437.0" />
+      <point x="51.33333333333337" y="37.5" />
+    </edge>
+    <edge source="principlesofSoftwareDesign.CompositeReusePrinciple.FlyNoWay" target="principlesofSoftwareDesign.CompositeReusePrinciple.Flyable">
+      <point x="0.0" y="-26.0" />
+      <point x="722.0" y="683.0" />
+      <point x="676.5" y="683.0" />
+      <point x="30.5" y="26.0" />
+    </edge>
+    <edge source="principlesofSoftwareDesign.CompositeReusePrinciple.MuteQuack" target="principlesofSoftwareDesign.CompositeReusePrinciple.Quackable">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="principlesofSoftwareDesign.CompositeReusePrinciple.RubberDuck" target="principlesofSoftwareDesign.CompositeReusePrinciple.Duck">
+      <point x="0.0" y="-60.5" />
+      <point x="655.0" y="141.0" />
+      <point x="433.75" y="141.0" />
+      <point x="63.75" y="60.5" />
+    </edge>
+    <edge source="principlesofSoftwareDesign.CompositeReusePrinciple.DecoyDuck" target="principlesofSoftwareDesign.CompositeReusePrinciple.Duck">
+      <point x="0.0" y="-60.5" />
+      <point x="275.0" y="151.0" />
+      <point x="348.75" y="151.0" />
+      <point x="-21.25" y="60.5" />
+    </edge>
+    <edge source="principlesofSoftwareDesign.CompositeReusePrinciple.Squeak" target="principlesofSoftwareDesign.CompositeReusePrinciple.Quackable">
+      <point x="0.0" y="-26.0" />
+      <point x="69.0" y="683.0" />
+      <point x="181.0" y="683.0" />
+      <point x="-46.0" y="26.0" />
+    </edge>
+    <edge source="principlesofSoftwareDesign.CompositeReusePrinciple.FMallarDuck" target="principlesofSoftwareDesign.CompositeReusePrinciple.FDuck">
+      <point x="0.0" y="-49.5" />
+      <point x="0.0" y="37.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="464.5" y="552.5" />
+  <SelectedNodes>
+    <node>principlesofSoftwareDesign.CompositeReusePrinciple.FDecoyDuck</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
