@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package ch25mediatorpattern.mediatorpatternunion;
 

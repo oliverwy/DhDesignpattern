@@ -1,14 +1,15 @@
 package ch28visitorpattern.visitorpatternnormal;
 
 public class ConreteVisitor1 extends Vistor {
-	@Override
-	public void visitConcreteElementA(Element concreteEelmentsA) {
-		// TODO Auto-generated method stub
-		System.out.printf("\n%s ±» %s ·ÃÎÊ£¡",concreteEelmentsA.getClass().getName(),this.getClass().getName());
-	}
-	@Override
-	public void visitConcreteElementB(Element concreteEelmentsB) {
-		// TODO Auto-generated method stub
-		System.out.printf("\n%s ±» %s ·ÃÎÊ£¡",concreteEelmentsB.getClass().getName(),this.getClass().getName());
-	}
+    @Override
+    public void visitConcreteElementA(Element concreteEelmentsA) {
+        // TODO Auto-generated method stub
+        System.out.printf("\n%s ï¿½ï¿½ %s ï¿½ï¿½ï¿½Ê£ï¿½", concreteEelmentsA.getClass().getName(), this.getClass().getName());
+    }
+
+    @Override
+    public void visitConcreteElementB(Element concreteEelmentsB) {
+        // TODO Auto-generated method stub
+        System.out.printf("\n%s ï¿½ï¿½ %s ï¿½ï¿½ï¿½Ê£ï¿½", concreteEelmentsB.getClass().getName(), this.getClass().getName());
+    }
 }

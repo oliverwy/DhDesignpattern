@@ -1,19 +1,19 @@
 package ch26flyweightpattern.flyweightwebsitesecondcode;
 
 public class User {
-	public String getName() {
-		return Name;
-	}
+    private String Name;
 
-	public void setName(String name) {
-		Name = name;
-	}
+    public User(String name) {
+        super();
+        Name = name;
+    }
 
-	private String Name;
+    public String getName() {
+        return Name;
+    }
 
-	public User(String name) {
-		super();
-		Name = name;
-	}
-	
+    public void setName(String name) {
+        Name = name;
+    }
+
 }

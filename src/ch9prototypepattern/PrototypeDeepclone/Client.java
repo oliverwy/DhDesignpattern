@@ -3,24 +3,24 @@ package ch9prototypepattern.PrototypeDeepclone;
 
 public class Client {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Resume a=new Resume("大鸟");
-		a.setPersionInfo("男", "29");
-		a.setWorkExprience("1998-2000", "XXXX公司");
-		
-		Resume b =(Resume) a.Clone();
-		b.setWorkExprience("1998-2006", "YY企业");
-		
-		Resume c=(Resume) a.Clone();
-		c.setPersionInfo("女", "22");
-		c.setWorkExprience("1998-2003", "ZZ企业");
-		
-		a.display();
-		b.display();
-		c.display();
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Resume a = new Resume("大鸟");
+        a.setPersionInfo("男", "29");
+        a.setWorkExprience("1998-2000", "XXXX公司");
 
-	}
+        Resume b = (Resume) a.Clone();
+        b.setWorkExprience("1998-2006", "YY企业");
+
+        Resume c = (Resume) a.Clone();
+        c.setPersionInfo("女", "22");
+        c.setWorkExprience("1998-2003", "ZZ企业");
+
+        a.display();
+        b.display();
+        c.display();
+
+    }
 
 }
 /*运行结果，闹心了，本质原因浅度复制仅仅能复制简单的数据结构，复杂数据结构仅仅复制的是引用，也就是说

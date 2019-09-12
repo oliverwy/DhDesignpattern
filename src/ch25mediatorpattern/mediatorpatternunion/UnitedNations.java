@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package ch25mediatorpattern.mediatorpatternunion;
 
@@ -8,6 +8,6 @@ package ch25mediatorpattern.mediatorpatternunion;
  *
  */
 public interface UnitedNations {
-	public void declare(String message,Country colleague);
+    public void declare(String message, Country colleague);
 }
 

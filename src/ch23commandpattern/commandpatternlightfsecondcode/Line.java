@@ -1,17 +1,18 @@
 package ch23commandpattern.commandpatternlightfsecondcode;
 
 public class Line {
-	private Hifi hifi;
-	public Line() {
-		super();
-		this.hifi = new Hifi();
-	}
-	public void connect()
-	{
-		hifi.on();
-	}
-	public void disconnect()
-	{
-		hifi.off();
-	}
+    private Hifi hifi;
+
+    public Line() {
+        super();
+        this.hifi = new Hifi();
+    }
+
+    public void connect() {
+        hifi.on();
+    }
+
+    public void disconnect() {
+        hifi.off();
+    }
 }

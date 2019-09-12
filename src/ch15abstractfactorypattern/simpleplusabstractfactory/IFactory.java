@@ -1,42 +1,40 @@
 package ch15abstractfactorypattern.simpleplusabstractfactory;
 
 
-public interface IFactory
-{
-	public IUser createUser(); 
-	public IDepatment createDepatent();
+public interface IFactory {
+    public IUser createUser();
+
+    public IDepatment createDepatent();
 }
 
-class SqlserverFactory implements IFactory
-{
+class SqlserverFactory implements IFactory {
 
-	@Override
-	public IUser createUser() {
-		// TODO Auto-generated method stub
-		return new SqlserverUser();
-	}
+    @Override
+    public IUser createUser() {
+        // TODO Auto-generated method stub
+        return new SqlserverUser();
+    }
 
-	@Override
-	public IDepatment createDepatent() {
-		// TODO Auto-generated method stub
-		return new SqlserverDepartment();
-	}
-	
+    @Override
+    public IDepatment createDepatent() {
+        // TODO Auto-generated method stub
+        return new SqlserverDepartment();
+    }
+
 }
 
-class AccessFactory implements IFactory
-{
+class AccessFactory implements IFactory {
 
-	@Override
-	public IUser createUser() {
-		// TODO Auto-generated method stub
-		return new AccessUser();
-	}
+    @Override
+    public IUser createUser() {
+        // TODO Auto-generated method stub
+        return new AccessUser();
+    }
 
-	@Override
-	public IDepatment createDepatent() {
-		// TODO Auto-generated method stub
-		return new AccessDepartment();
-	}
-	
+    @Override
+    public IDepatment createDepatent() {
+        // TODO Auto-generated method stub
+        return new AccessDepartment();
+    }
+
 }

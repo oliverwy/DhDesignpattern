@@ -1,61 +1,59 @@
 package ch18mementopattern.normalmemento;
 
 public class Originator {
-	public String getState() {
-		return state;
-	}
+    private String state;
 
-	public void setState(String state) {
-		this.state = state;
-	}
+    public String getState() {
+        return state;
+    }
 
-	private String state;
-	
-	public Memento createMemento()
-	{
-		return new Memento(state);
-	}
-	public void setMemento(Memento memento)
-	{
-		state=memento.getState();
-	}
-	public void show()
-	{
-		System.out.println("state="+state);
-	}
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public Memento createMemento() {
+        return new Memento(state);
+    }
+
+    public void setMemento(Memento memento) {
+        state = memento.getState();
+    }
+
+    public void show() {
+        System.out.println("state=" + state);
+    }
 }
 
-class Memento
-{
+class Memento {
 
-	private String state;
+    private String state;
 
-	public Memento(String state) {
-		super();
-		this.state = state;
-	}
-	public String getState() {
-		return state;
-	}
+    public Memento(String state) {
+        super();
+        this.state = state;
+    }
 
-	public void setState(String state) {
-		this.state = state;
-	}
-	
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
 }
 
-class Caretaker
-{
-	public Memento getMemento() {
-		return memento;
-	}
+class Caretaker {
+    private Memento memento;
 
-	public void setMemento(Memento memento) {
-		this.memento = memento;
-	}
+    public Memento getMemento() {
+        return memento;
+    }
 
-	private Memento memento;
-	
+    public void setMemento(Memento memento) {
+        this.memento = memento;
+    }
+
 }
 
 

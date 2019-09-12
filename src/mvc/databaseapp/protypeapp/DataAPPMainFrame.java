@@ -1,21 +1,14 @@
 package mvc.databaseapp.protypeapp;
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Vector;
-
-import javax.swing.*;
 
 
 public class DataAPPMainFrame extends JFrame {
@@ -38,18 +31,9 @@ public class DataAPPMainFrame extends JFrame {
     private MyTable table;
     private Connection conn;
 
-    public static void main(String[] args) throws ClassNotFoundException, SQLException {
-    	DataAPPMainFrame frame = new DataAPPMainFrame("数据库应用演示");
-        frame.connectToDB();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setMinimumSize(new Dimension(750, 500));
-        frame.setVisible(true);
-        frame.setResizable(false);
-    }
-
     //构造函数，负责创建用户界面
     public DataAPPMainFrame(String title) {
-    	super(title);
+        super(title);
 
         Vector<String> titles = new Vector<String>(TITLES);
         table = new MyTable(dataModel, titles);
@@ -93,6 +77,15 @@ public class DataAPPMainFrame extends JFrame {
         setActionListener();
     }
 
+    public static void main(String[] args) throws ClassNotFoundException, SQLException {
+        DataAPPMainFrame frame = new DataAPPMainFrame("数据库应用演示");
+        frame.connectToDB();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setMinimumSize(new Dimension(750, 500));
+        frame.setVisible(true);
+        frame.setResizable(false);
+    }
+
     //程序启动时，需调用该方法连接到数据库
     //之所以不放在构造函数中，是因为这些操作可能抛出异常，需要单独处理
     public void connectToDB() throws SQLException, ClassNotFoundException {
@@ -111,7 +104,8 @@ public class DataAPPMainFrame extends JFrame {
                 if (id.isSelected()) conditions.add("(Sid = '" + id.getText() + "')");
                 if (name.isSelected()) conditions.add("(Sname like '" + name.getText() + "')");
                 if (sex.isSelected()) conditions.add("(Ssex = '" + sex.getText() + "')");
-                if (age.isSelected()) conditions.add("(Sage >= " + age.getText() + " AND " + "Sage <= " + age.getText2() + ")");
+                if (age.isSelected())
+                    conditions.add("(Sage >= " + age.getText() + " AND " + "Sage <= " + age.getText2() + ")");
                 if (class_.isSelected()) conditions.add("(Sclass = '" + class_.getText() + "')");
                 if (dept.isSelected()) conditions.add("(Sdept = '" + dept.getText() + "')");
                 if (addr.isSelected()) conditions.add("(Saddr like '" + addr.getText() + "')");
@@ -200,7 +194,7 @@ public class DataAPPMainFrame extends JFrame {
 
                 //在文本框显示 SQL 命令
                 String cmd = "insert into student values ('" + sid + "', '" + sname + "', '" +
-                ssex + "', " + sage + ", '" + sclass + "', '" + sdept + "', '" + saddr + "');"; 
+                        ssex + "', " + sage + ", '" + sclass + "', '" + sdept + "', '" + saddr + "');";
                 textarea.setText(cmd);
 
                 PreparedStatement ps;

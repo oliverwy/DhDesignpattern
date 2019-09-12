@@ -1,32 +1,32 @@
 package ch22brigepattern.brigepatterndemo;
 
-public interface ColorType{
-	public String setColorType(String color);
+public interface ColorType {
+    public String setColorType(String color);
 }
 
-class Red implements ColorType{
+class Red implements ColorType {
 
     public String setColorType(String color) {
-    	return "红色";
+        return "红色";
     }
 }
 
-class Yellow implements ColorType{
+class Yellow implements ColorType {
 
     public String setColorType(String color) {
-    	return "黄色";
+        return "黄色";
     }
 
 }
 
-class Green implements ColorType{
+class Green implements ColorType {
 
     public String setColorType(String color) {
-    	return "绿色";
+        return "绿色";
     }
 }
 
-class Blue implements ColorType{
+class Blue implements ColorType {
 
     public String setColorType(String color) {
         return "蓝色";

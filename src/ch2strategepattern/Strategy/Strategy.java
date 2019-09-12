@@ -11,6 +11,7 @@ class ConcreteStrategyA implements Strategy {
 
     }
 }
+
 class ConcreteStrategyB implements Strategy {
     @Override
     public void AlgorithnInterface() {
