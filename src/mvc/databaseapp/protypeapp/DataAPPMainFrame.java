@@ -12,6 +12,10 @@ import java.util.Vector;
 
 
 public class DataAPPMainFrame extends JFrame {
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private final int COLUMN = 7;
     private final List<String> TITLES = Arrays.asList(
             "Sid", "Sname", "Ssex", "Sage", "Sclass", "Sdept", "Saddr");
