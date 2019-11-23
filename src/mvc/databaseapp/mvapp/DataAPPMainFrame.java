@@ -78,7 +78,7 @@ public class DataAPPMainFrame extends JFrame {
     }
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
-        DataAPPMainFrame frame = new DataAPPMainFrame("数据库应用演示");
+        DataAPPMainFrame frame = new DataAPPMainFrame("学生基本信息录入和查询");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setMinimumSize(new Dimension(750, 500));
         frame.setVisible(true);
