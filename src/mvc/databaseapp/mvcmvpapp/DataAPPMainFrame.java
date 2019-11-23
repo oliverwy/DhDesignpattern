@@ -11,6 +11,9 @@ import java.util.Vector;
 public class DataAPPMainFrame extends JFrame {
     private final int COLUMN = 7;
     private final List<String> TITLES = Arrays.asList("Sid", "Sname", "Ssex", "Sage", "Sclass", "Sdept", "Saddr");
+    private final List<String> VTITLES = Arrays.asList(
+            "学号", "姓名", "性别", "年龄", "专业", "系别", "家庭地址");
+
     private QueryItem addr = new QueryItem("地址：", 10);
     private QueryItem2 age = new QueryItem2("年龄自：", "到", 5);
     private QueryItem class_ = new QueryItem("班级：", 5);
@@ -42,7 +45,7 @@ public class DataAPPMainFrame extends JFrame {
     public DataAPPMainFrame(String title) throws SQLException, ClassNotFoundException {
         super(title);
 
-        Vector<String> titles = new Vector<String>(TITLES);
+        Vector<String> titles = new Vector<String>(VTITLES);
         table = new MyTable(dataModel, titles);
         table.getColumnModel().getColumn(2).setPreferredWidth(30);
         table.getColumnModel().getColumn(3).setPreferredWidth(30);

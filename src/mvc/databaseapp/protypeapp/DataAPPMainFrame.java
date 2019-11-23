@@ -12,13 +12,13 @@ import java.util.Vector;
 
 
 public class DataAPPMainFrame extends JFrame {
-    /**
-     *
-     */
     private static final long serialVersionUID = 1L;
     private final int COLUMN = 7;
     private final List<String> TITLES = Arrays.asList(
             "Sid", "Sname", "Ssex", "Sage", "Sclass", "Sdept", "Saddr");
+    private final List<String> VTITLES = Arrays.asList(
+            "学号", "姓名", "性别", "年龄", "专业", "系别", "家庭地址");
+ 
     private Vector<Vector<String>> dataModel = new Vector<Vector<String>>();
     private QueryItem id = new QueryItem("学号：", 10);
     private QueryItem name = new QueryItem("姓名：", 10);
@@ -39,7 +39,7 @@ public class DataAPPMainFrame extends JFrame {
     public DataAPPMainFrame(String title) {
         super(title);
 
-        Vector<String> titles = new Vector<String>(TITLES);
+        Vector<String> titles = new Vector<String>(VTITLES);
         table = new MyTable(dataModel, titles);
         table.getColumnModel().getColumn(2).setPreferredWidth(30);
         table.getColumnModel().getColumn(3).setPreferredWidth(30);

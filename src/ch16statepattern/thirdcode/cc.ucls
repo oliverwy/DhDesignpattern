@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+<class-diagram version="1.2.3" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="false" dependencies="true" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="ch16statepattern.thirdcode.ConcreteStateB" project="DhDesignpattern" 
     file="/DhDesignpattern/src/ch16statepattern/thirdcode/State.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="553" y="257"/>    
+    <position height="-1" width="-1" x="490" y="379"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="ch16statepattern.thirdcode.Context" project="DhDesignpattern" 
     file="/DhDesignpattern/src/ch16statepattern/thirdcode/State.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="266" y="141"/>    
+    <position height="-1" width="-1" x="256" y="178"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="ch16statepattern.thirdcode.ConcreteStateA" project="DhDesignpattern" 
     file="/DhDesignpattern/src/ch16statepattern/thirdcode/State.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="390" y="259"/>    
+    <position height="-1" width="-1" x="345" y="378"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="ch16statepattern.thirdcode.State" project="DhDesignpattern" 
     file="/DhDesignpattern/src/ch16statepattern/thirdcode/State.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="464" y="140"/>    
+    <position height="-1" width="-1" x="416" y="213"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,27 +39,27 @@
   </class>  
   <class id="5" language="java" name="ch16statepattern.thirdcode.Client" project="DhDesignpattern" 
     file="/DhDesignpattern/src/ch16statepattern/thirdcode/Client.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="86" y="139"/>    
+    <position height="-1" width="-1" x="70" y="228"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <generalization id="6">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="4"/>  
-  </generalization>  
-  <dependency id="7">    
+  <dependency id="6">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="4"/>  
   </dependency>  
+  <generalization id="7">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
   <dependency id="8">    
     <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="2"/>  
   </dependency>  
   <generalization id="9">    
-    <end type="SOURCE" refId="1"/>    
+    <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="4"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
