@@ -7,6 +7,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="ini4j-0.5.4.jar"/>
-	<classpathentry kind="lib" path="/home/oliver/git/DhDesignpattern/mariadb-java-client-2.4.2.jar"/>
+	<classpathentry kind="lib" path="/Users/oliver/git/DhDesignpattern/mariadb-java-client-2.4.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
