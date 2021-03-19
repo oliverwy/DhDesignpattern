@@ -1,5 +1,7 @@
 package ch15_abstractfactorypattern.factorydatabasevisit;
 
+import java.sql.Connection;
+
 public interface IUser {
     public void insert(User user);
 
@@ -28,7 +30,17 @@ class SqlserverUser implements IUser {
 
 class AccessUser implements IUser {
 
-    @Override
+	private Connection con;
+	private void connectToDB()
+	{
+		
+	}
+	public AccessUser() {
+		super();
+		connectToDB();
+		// TODO Auto-generated constructor stub
+	}
+	@Override
     public void insert(User user) {
         // TODO Auto-generated method stub
         System.out.println("在Access中添加一条记录");
