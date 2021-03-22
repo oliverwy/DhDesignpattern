@@ -7,9 +7,9 @@ public class Client {
         User user = new User();
         //IFactory factory=new SqlserverFactory();
         IFactory factory = new AccessFactory();
-        IUser iu = factory.createUser();
-        iu.insert(user);
-        iu.getUse(0);
+        IUserOperate userEntity = factory.createUserEntity();
+        userEntity.insert(user);
+        userEntity.getUser(0);
     }
 
 }

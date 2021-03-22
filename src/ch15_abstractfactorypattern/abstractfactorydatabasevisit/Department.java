@@ -1,9 +1,8 @@
 package ch15_abstractfactorypattern.abstractfactorydatabasevisit;
 
 
-interface IDepatment {
+interface IDepatmentOperate {
     public void insert(Department department);
-
     public Department getDepartment(int id);
 }
 
@@ -29,7 +28,7 @@ public class Department {
 }
 
 
-class SqlserverDepartment implements IDepatment {
+class SqlserverDepartmentEntity implements IDepatmentOperate {
 
     @Override
     public void insert(Department deparment) {
@@ -45,7 +44,7 @@ class SqlserverDepartment implements IDepatment {
     }
 }
 
-class AccessDepartment implements IDepatment {
+class AccessDepartmentEntity implements IDepatmentOperate {
 
     @Override
     public void insert(Department deparment) {

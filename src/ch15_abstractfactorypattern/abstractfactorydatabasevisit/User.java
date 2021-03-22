@@ -1,8 +1,7 @@
 package ch15_abstractfactorypattern.abstractfactorydatabasevisit;
 
-interface IUser {
+interface IUserOperate {
     public void insert(User user);
-
     public User getUse(int id);
 
 }
@@ -29,7 +28,7 @@ public class User {
 
 }
 
-class SqlserverUser implements IUser {
+class SqlserverUserEntity implements IUserOperate {
     @Override
     public void insert(User user) {
         // TODO Auto-generated method stub
@@ -44,7 +43,7 @@ class SqlserverUser implements IUser {
     }
 }
 
-class AccessUser implements IUser {
+class AccessUserEntity implements IUserOperate {
 
     @Override
     public void insert(User user) {

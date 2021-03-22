@@ -2,18 +2,17 @@ package ch15_abstractfactorypattern.factorydatabasevisit;
 
 import java.sql.Connection;
 
-public interface IUser {
+public interface IUserOperate {
     public void insert(User user);
-
-    public User getUse(int id);
-
+    public User getUser(int id);
 }
 
 interface IFactory {
-    public IUser createUser();
+	public void connectToDb();
+    public IUserOperate createUserEntity();
 }
 
-class SqlserverUser implements IUser {
+class SqlserverUserEntity implements IUserOperate {
     @Override
     public void insert(User user) {
         // TODO Auto-generated method stub
@@ -21,25 +20,16 @@ class SqlserverUser implements IUser {
     }
 
     @Override
-    public User getUse(int id) {
+    public User getUser(int id) {
         // TODO Auto-generated method stub
         System.out.println("在SQLserver中根据ID得到User表的一条记录");
         return null;
     }
+
 }
 
-class AccessUser implements IUser {
+class AccessUserEntity implements IUserOperate {
 
-	private Connection con;
-	private void connectToDB()
-	{
-		
-	}
-	public AccessUser() {
-		super();
-		connectToDB();
-		// TODO Auto-generated constructor stub
-	}
 	@Override
     public void insert(User user) {
         // TODO Auto-generated method stub
@@ -47,7 +37,7 @@ class AccessUser implements IUser {
     }
 
     @Override
-    public User getUse(int id) {
+    public User getUser(int id) {
         // TODO Auto-generated method stub
         System.out.println("在AAcesss中根据ID得到User表的一条记录");
         return null;
@@ -56,23 +46,47 @@ class AccessUser implements IUser {
 }
 
 class SqlserverFactory implements IFactory {
-
-    @Override
-    public IUser createUser() {
-        // TODO Auto-generated method stub
-        return new SqlserverUser();
-    }
+	public SqlserverFactory() {
+		super();
+		// TODO Auto-generated constructor stub
+		connectToDb();
+	}
+	private Connection conn;
+	public void connectToDb() {
+		// TODO Auto-generated method stub
+//		配置链接数据库的信息
+		 System.out.println("连接到SQLServer数据库");
+		
+	}
+ 	@Override
+	public IUserOperate createUserEntity() {
+		// TODO Auto-generated method stub
+		return new SqlserverUserEntity();
+	}
 
 }
 
 class AccessFactory implements IFactory {
+	private Connection conn;
+	@Override
+	public void connectToDb() {
+		// TODO Auto-generated method stub
+		 System.out.println("连接到ACCESS数据库");
+	}
 
-    @Override
-    public IUser createUser() {
-        // TODO Auto-generated method stub
-        return new AccessUser();
-    }
+	public AccessFactory() {
+		super();
+		connectToDb();
+		// TODO Auto-generated constructor stub
+	}
 
+	@Override
+	public IUserOperate createUserEntity() {
+		// TODO Auto-generated method stub
+		return new AccessUserEntity();
+	}
+
+ 
 }
 
 class User {

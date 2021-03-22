@@ -13,10 +13,10 @@ public class Client {
         IFactory databasefactory = null;
         DataAccessfactory dd = new DataAccessfactory();
         databasefactory = dd.createDatabase();
-        IUser iu = databasefactory.createUser();
+        IUserOperate iu = databasefactory.createUserEntity();
         iu.insert(user);
-        iu.getUse(0);
-        IDepatment id = databasefactory.createDepartment();
+        iu.getUser(0);
+        IDepatmentOperate id = databasefactory.createDepatentEntity();
         id.insert(dept);
         id.getDepartment(0);
     }

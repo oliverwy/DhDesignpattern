@@ -2,7 +2,6 @@ package ch15_abstractfactorypattern.simpleplusabstractfactory;
 
 interface IUser {
     public void insert(User user);
-
     public User getUse(int id);
 
 }

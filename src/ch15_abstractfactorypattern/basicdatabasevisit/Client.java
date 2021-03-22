@@ -3,11 +3,11 @@ package ch15_abstractfactorypattern.basicdatabasevisit;
 public class Client {
     public static void main(String[] args) {
         User user = new User();
-        SqlserverUser sUser = new SqlserverUser();
+        Sqlserver sSQL = new Sqlserver();
         user.setID(3);
         user.setName("ceshi");
-        sUser.insert(user);
-        User s=  sUser.getUser(1);
+        sSQL.insert(user);
+        User s=  sSQL.getUser(1);
         System.out.println("s.getID():"+s.getID()+"  s.getName"+s.getName());
     }
 }

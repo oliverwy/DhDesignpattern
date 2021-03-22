@@ -7,10 +7,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class SqlserverUser {
+public class Sqlserver {
 	private Connection conn;
 
-	public SqlserverUser() {
+	public Sqlserver() {
 		connectToDB();
 	}
 

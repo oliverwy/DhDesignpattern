@@ -2,9 +2,7 @@ package ch15_abstractfactorypattern.reflectionplusconfigfactorydatabasevisit;
 
 
 public interface IFactory {
-    public IUser createUser();
-
-    public IDepatment createDepartment();
+	public void connectToDb();
+	public IUserOperate createUserEntity();
+	public IDepatmentOperate createDepatentEntity();
 }
-
-

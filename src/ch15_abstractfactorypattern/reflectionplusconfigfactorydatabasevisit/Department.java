@@ -1,12 +1,11 @@
 package ch15_abstractfactorypattern.reflectionplusconfigfactorydatabasevisit;
 
 
-interface IDepatment {
-    public void insert(Department department);
 
+interface IDepatmentOperate {
+    public void insert(Department department);
     public Department getDepartment(int id);
 }
-
 public class Department {
     private int ID;
     private String DeptName;
@@ -29,7 +28,7 @@ public class Department {
 }
 
 
-class SqlserverDepartment implements IDepatment {
+class SqlserverDepartmentEntity implements IDepatmentOperate {
 
     @Override
     public void insert(Department deparment) {
@@ -45,7 +44,7 @@ class SqlserverDepartment implements IDepatment {
     }
 }
 
-class AccessDepartment implements IDepatment {
+class AccessDepartmentEntity implements IDepatmentOperate {
 
     @Override
     public void insert(Department deparment) {
@@ -60,4 +59,5 @@ class AccessDepartment implements IDepatment {
         return null;
     }
 }
+
 
