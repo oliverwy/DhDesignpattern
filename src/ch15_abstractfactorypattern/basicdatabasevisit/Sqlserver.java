@@ -9,11 +9,9 @@ import java.sql.Statement;
 
 public class Sqlserver {
 	private Connection conn;
-
 	public Sqlserver() {
 		connectToDB();
 	}
-
 	public void connectToDB() {
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");
