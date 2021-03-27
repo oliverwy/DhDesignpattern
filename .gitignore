@@ -4,7 +4,6 @@
 /.idea/
 /.classpath
 /.settings/
-/.DS_store
+.DS_store
 /.project
-/.gitignore
 /DhDesignpattern.iml
