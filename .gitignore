@@ -2,3 +2,9 @@
 /.idea/
 /.vscode/
 /.idea/
+/.classpath
+/.settings/
+/.DS_store
+/.project
+/.gitignore
+/DhDesignpattern.iml
