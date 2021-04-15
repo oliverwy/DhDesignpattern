@@ -20,7 +20,7 @@ public class ClientPC {
 		pcBox.add(new FAN("双铜管散热",300));
 		pcBox.add(new Power("64KW容量电池",1500));
 		pcBox.add(new Monitor("13.3高分显示屏",1000));
-		pcBox.add(new DVDDevice("没有DVD光驱",0));
+		pcBox.add(new DVDDevice("东芝DVD光驱",1000));
 		
 		wholePC.add(pcBox);
 		wholePC.add(new Mouse("蓝牙免驱双模鼠标",150));

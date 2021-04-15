@@ -43,15 +43,6 @@ class HardDisk extends ComputerParts {
 
 }
 
-class Memory extends ComputerParts {
-
-	@Override
-	public float getPrice() {
-		System.out.println(getName()+"--内存的价格："+getUnitprice());
-		return getUnitprice();
-	}
-
-}
 
 class DriverController extends ComputerParts {
 
@@ -102,6 +93,16 @@ class VideoCard extends ComputerParts {
 	}
 
 }
+class Memory extends ComputerParts {
+
+	@Override
+	public float getPrice() {
+		System.out.println(getName()+"--内存的价格："+getUnitprice());
+		return getUnitprice();
+	}
+
+}
+
 
 class Monitor extends ComputerParts {
 
@@ -143,33 +144,58 @@ class Power extends ComputerParts {
 
 }
 
+class Motherboard extends ComputerParts{
+
+	@Override
+	public float getPrice() {
+		System.out.println(getName()+"--主板的价格："+getUnitprice());
+		return getUnitprice();
+	}
+}
+
+class BoxProtype extends ComputerParts{
+
+	@Override
+	public float getPrice() {
+		System.out.println(getName()+"--机箱的价格："+getUnitprice());
+		return getUnitprice();
+	}
+	
+}
+
+
 class Composite extends ComputerParts {
 	private List<ComputerParts> a = new ArrayList<ComputerParts>();
-
 	@Override
 	public float getPrice() {
 		float p = 0;
 		for (int i = 0; i < a.size(); i++) {
 			p = p + a.get(i).getPrice();
 		}
-		System.out.println(p);
+		System.out.println(getName()+"组装好部件的总价："+p);
+		System.out.println("--------------------------------------------------");
 		return p;
 	}
-
 	public void add(ComputerParts c) {
 		a.add(c);
 	}
-
 	public void remove(ComputerParts c) {
 		a.remove(c);
 	}
-
 	public void getChild() {
 		for (int i = 0; i < a.size(); i++) {
 			System.out.println(a.get(i).toString());
 		}
 	}
 }
+
+class WholePC extends Composite {
+	public float getPrice() {
+		System.out.println(getName()+"的价格为："+getUnitprice());
+		return super.getPrice()+getUnitprice();
+	}
+}
+
 
 class MotherBoardPlus extends Composite {
 
@@ -187,8 +213,3 @@ class Box extends Composite{
 	}
 }
 
-class WholePC extends Composite {
-	public void calculateProcess() {
-		System.out.println("计算机组装起来后可以完成一定的计算！");
-	}
-}

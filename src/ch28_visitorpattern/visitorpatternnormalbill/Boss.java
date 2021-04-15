@@ -6,23 +6,25 @@ public class Boss implements AccountBookViewer {
     private double totalConsume;
 
     // 老板只关注一共花了多少钱以及一共收入多少钱，其余并不关心
-    public void consumeView(ConsumeBill bill) {
+    public double countConsumeView(ConsumeBill bill) {
         totalConsume += bill.getAmount();
+        return totalConsume;
     }
 
-    public void incomeView(IncomeBill bill) {
+    public double countIncomeView(IncomeBill bill) {
         totalIncome += bill.getAmount();
-    }
-
-    public double getTotalIncome() {
-        System.out.println("老板查看一共收入多少，"
-                + "数目是：" + totalIncome);
         return totalIncome;
     }
 
-    public double getTotalConsume() {
-        System.out.println("老板查看一共花费多少"
-                + "，数目是：" + totalConsume);
+    @Override
+    public double getConsumeTotal() {
+        System.out.println("老板查看一共花费多少，数目是：" + totalConsume);
         return totalConsume;
+    }
+
+    @Override
+    public double getImcomeTotal() {
+        System.out.println("老板查看一共收入多少，数目是：" + totalIncome);
+        return totalIncome;
     }
 }

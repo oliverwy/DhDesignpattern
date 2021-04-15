@@ -1,92 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
-  <interface id="1" language="java" name="ch20iteratorpattern.TVdemo.TvIterator" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch20iteratorpattern/TVdemo/TvIterator.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="380" y="121"/>    
+  <interface id="1" language="java" name="ch20_iteratorpattern.TVdemo.TvIterator" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch20_iteratorpattern/TVdemo/TvIterator.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="525" y="198"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <interface id="2" language="java" name="ch20iteratorpattern.TVdemo.TvAggregate" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch20iteratorpattern/TVdemo/TvAggregate.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="668" y="101"/>    
+  <interface id="2" language="java" name="ch20_iteratorpattern.TVdemo.TvAggregate" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch20_iteratorpattern/TVdemo/TvAggregate.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="812" y="196"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="3" language="java" name="ch20iteratorpattern.TVdemo.ConcreteTvIterator" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch20iteratorpattern/TVdemo/ConcreteTvIterator.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="218" y="333"/>    
+  <class id="3" language="java" name="ch20_iteratorpattern.TVdemo.TvClient" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch20_iteratorpattern/TVdemo/TvClient.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="260" y="197"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="ch20iteratorpattern.TVdemo.ConcreteTv" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch20iteratorpattern/TVdemo/ConcreteTv.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="665" y="346"/>    
+  <class id="4" language="java" name="ch20_iteratorpattern.TVdemo.ConcreteTv" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch20_iteratorpattern/TVdemo/ConcreteTv.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="812" y="502"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="ch20iteratorpattern.TVdemo.TvClient" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch20iteratorpattern/TVdemo/TvClient.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="137" y="121"/>    
+  <class id="5" language="java" name="ch20_iteratorpattern.TVdemo.ConcreteTvIterator" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch20_iteratorpattern/TVdemo/ConcreteTvIterator.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="526" y="504"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="ch20iteratorpattern.TVdemo.Chanel" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch20iteratorpattern/TVdemo/Chanel.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="419" y="464"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <association id="7">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="8" name="aggregate"/>      
-      <multiplicity id="9" minimum="0" maximum="1"/>    
+  <realization id="6">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <dependency id="7">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <realization id="8">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <association id="9">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="10" name="aggregate"/>      
+      <multiplicity id="11" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="10">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <realization id="11">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
   <association id="12">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="13" name="Chanels"/>      
-      <multiplicity id="14" minimum="0" maximum="2147483647"/>    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="13" name="tvIte"/>      
+      <multiplicity id="14" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
+    <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="15">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <realization id="16">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="1"/>  
-  </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

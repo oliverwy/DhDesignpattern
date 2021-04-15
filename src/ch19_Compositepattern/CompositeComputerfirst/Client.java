@@ -6,7 +6,12 @@ public class Client {
 		// TODO Auto-generated method stub
 		WholePC p = new WholePC();
 
-		MotherBoardPlus m = new MotherBoardPlus();
+		BoxProtype box=new BoxProtype();
+		box.setName("金河田");
+		box.setPrice(260);
+		p.add(box);
+		
+		Motherboard m = new Motherboard();
 		m.setName("技嘉主板");
 		m.setPrice(1000);
 		p.add(m);
@@ -72,7 +77,6 @@ public class Client {
 		p.add(pp);
 
 		p.getChild();
-		p.calculateProcess();
 		p.getPrice();
 
 	}

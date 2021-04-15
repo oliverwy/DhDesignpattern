@@ -9,13 +9,17 @@ public class Client {
         // 添加两条支出
         accountBook.addBill(new ConsumeBill(1000, "工资"));
         accountBook.addBill(new ConsumeBill(2000, "材料费"));
+
         AccountBookViewer boss = new Boss();
         AccountBookViewer cpa = new CPA();
         // 两个访问者分别访问账本
-        accountBook.show(cpa);
         accountBook.show(boss);
-        ((Boss) boss).getTotalConsume();
-        ((Boss) boss).getTotalIncome();
+        boss.getConsumeTotal();
+        boss.getImcomeTotal();
+
+        accountBook.show(cpa);
+        cpa.getConsumeTotal();
+        cpa.getImcomeTotal();
     }
 
 }

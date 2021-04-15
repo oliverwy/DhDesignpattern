@@ -1,7 +1,7 @@
 package ch28_visitorpattern.visitorpatternnormalbill;
 
 //收入账目结构，允许任何人查看，相当于具体元素
-public class IncomeBill implements Bill {
+public class IncomeBill implements BillItem {
     private double amount;
     private String item;
 
@@ -11,8 +11,8 @@ public class IncomeBill implements Bill {
         this.item = item;
     }
 
-    public void openBy(AccountBookViewer viewer) {
-        viewer.incomeView(this);
+    public void visitedBy(AccountBookViewer viewer) {
+        viewer.countIncomeView(this);
     }
 
     public double getAmount() {

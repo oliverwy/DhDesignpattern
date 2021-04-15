@@ -1,6 +1,6 @@
 package ch20_iteratorpattern.TVdemo;
 
-public class Chanel { //每一个频道的属性
+public class Chanel { // 每一个频道的属性
     private String name;
     private String chanalNo;
 

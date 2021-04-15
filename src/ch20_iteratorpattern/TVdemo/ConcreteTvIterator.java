@@ -16,13 +16,13 @@ public class ConcreteTvIterator implements TvIterator {
             i = 0;
         if (i > aggregate.count())
             i = aggregate.count() - 1;
-        return aggregate.getItem(i);
+        return aggregate.getChanel(i);
     }
 
     @Override
     public Chanel firstChanel() {
         current = 0;
-        return aggregate.getItem(0);
+        return aggregate.getChanel(0);
     }
 
     @Override
@@ -30,10 +30,10 @@ public class ConcreteTvIterator implements TvIterator {
         Chanel ret = null;
         current--;
         if (current >= 0) {
-            ret = aggregate.getItem(current);
+            ret = aggregate.getChanel(current);
         } else {
             current = aggregate.count() - 1;
-            ret = aggregate.getItem(current);
+            ret = aggregate.getChanel(current);
         }
         return ret;
     }
@@ -43,16 +43,34 @@ public class ConcreteTvIterator implements TvIterator {
         Chanel ret = null;
         current++;
         if (current < aggregate.count()) {
-            ret = aggregate.getItem(current);
+            ret = aggregate.getChanel(current);
         } else {
             current = 0;
-            ret = aggregate.getItem(current);
+            ret = aggregate.getChanel(current);
         }
         return ret;
     }
 
     @Override
     public Chanel currentChanel() {
-        return aggregate.getItem(current);
+        return aggregate.getChanel(current);
+    }
+
+    @Override
+    public int initChanel() {
+        aggregate.initChanel();
+        return aggregate.count();
+    }
+
+    @Override
+    public void insertChanel(int index, Chanel value) {
+        Chanel nc = new Chanel("an", "s");
+        aggregate.insertChanel(index, nc);
+    }
+
+    @Override
+    public void removeChanel(int index) {
+        // TODO Auto-generated method stub
+        aggregate.removeChanel(index);
     }
 }

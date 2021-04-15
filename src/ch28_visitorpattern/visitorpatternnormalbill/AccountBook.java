@@ -5,18 +5,18 @@ import java.util.List;
 
 //账本类（相当于ObjectStruture）
 public class AccountBook {
-    // 单子列表
-    private List<Bill> billList = new ArrayList<Bill>();
+    // 账目列表
+    private List<BillItem> billList = new ArrayList<BillItem>();
 
-    // 添加单子
-    public void addBill(Bill bill) {
+    // 添加收支项
+    public void addBill(BillItem bill) {
         billList.add(bill);
     }
 
     // 供账本的查看者查看账本
     public void show(AccountBookViewer viewer) {
-        for (Bill bill : billList) {
-            bill.openBy(viewer);
+        for (BillItem bill : billList) {
+            bill.visitedBy(viewer);
         }
     }
 }

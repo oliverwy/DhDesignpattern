@@ -5,9 +5,6 @@ import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 
 public class TvClient extends JFrame {
 
@@ -22,7 +19,7 @@ public class TvClient extends JFrame {
     public TvClient() {
         setTitle("电视机应用实例");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setBounds(100, 100, 450, 300);
+        setBounds(100, 100, 390, 392);
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
@@ -55,12 +52,12 @@ public class TvClient extends JFrame {
         contentPane.add(lblNewLabel);
 
         tfChanel = new JTextField();
-        tfChanel.setBounds(271, 162, 130, 26);
+        tfChanel.setBounds(179, 270, 94, 26);
         contentPane.add(tfChanel);
         tfChanel.setColumns(10);
 
         JLabel label = new JLabel("指定频道");
-        label.setBounds(197, 167, 61, 16);
+        label.setBounds(71, 275, 61, 16);
         contentPane.add(label);
         JButton btnNewButton_2 = new JButton("播放指定频道");
         btnNewButton_2.addActionListener(new ActionListener() {
@@ -73,7 +70,7 @@ public class TvClient extends JFrame {
                 lblplayInfo.setText(c.play());
             }
         });
-        btnNewButton_2.setBounds(271, 200, 117, 29);
+        btnNewButton_2.setBounds(86, 308, 117, 29);
         contentPane.add(btnNewButton_2);
         JButton btnNewButton_3 = new JButton("首频道");
         btnNewButton_3.addActionListener(new ActionListener() {
@@ -85,7 +82,7 @@ public class TvClient extends JFrame {
                 lblplayInfo.setText(c.play());
             }
         });
-        btnNewButton_3.setBounds(35, 241, 117, 29);
+        btnNewButton_3.setBounds(50, 241, 117, 29);
         contentPane.add(btnNewButton_3);
         JButton btnNewButton_1 = new JButton("前一频道");
         btnNewButton_1.addActionListener(new ActionListener() {
@@ -98,7 +95,7 @@ public class TvClient extends JFrame {
 
             }
         });
-        btnNewButton_1.setBounds(35, 200, 117, 29);
+        btnNewButton_1.setBounds(50, 208, 117, 29);
         contentPane.add(btnNewButton_1);
         JButton btnNewButton = new JButton("后一频道");
         btnNewButton.addActionListener(new ActionListener() {
@@ -110,8 +107,25 @@ public class TvClient extends JFrame {
                 lblplayInfo.setText(c.play());
             }
         });
-        btnNewButton.setBounds(148, 200, 117, 29);
+        btnNewButton.setBounds(169, 208, 117, 29);
         contentPane.add(btnNewButton);
+
+        JButton btnNewButton_4 = new JButton("初始化频道");
+        btnNewButton_4.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                tvIte.initChanel();
+            }
+        });
+        btnNewButton_4.setBounds(169, 241, 117, 29);
+        contentPane.add(btnNewButton_4);
+
+        JLabel lblNewLabel_3 = new JLabel("模拟电视端");
+        lblNewLabel_3.setBounds(176, 16, 117, 16);
+        contentPane.add(lblNewLabel_3);
+
+        JLabel lblNewLabel_4 = new JLabel("模拟遥控器");
+        lblNewLabel_4.setBounds(147, 180, 126, 16);
+        contentPane.add(lblNewLabel_4);
 
 
     }
@@ -133,17 +147,7 @@ public class TvClient extends JFrame {
     }
 
     private void initTV() {
-        List<Chanel> Chanels = new ArrayList<Chanel>();
-        int i;
-        String chanelName;
-        Random random = new Random();
-        Chanel c;
-        for (i = 0; i < 40; i++) {
-            chanelName = "安徽" + String.valueOf(random.nextInt(30)) + "台";
-            c = new Chanel(chanelName, String.valueOf(i));
-            Chanels.add(c);
-        }
-        tvCon = new ConcreteTv(Chanels, "开天50", "飞天系里", "长虹电视");
+        tvCon = new ConcreteTv(300, "开天50", "飞天系里", "长虹电视");
         tvIte = new ConcreteTvIterator(tvCon);
 
     }

@@ -1,62 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="ch19.Compositefirstcode.Composite" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch19/Compositefirstcode/Composite.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="500" y="295"/>    
+  <class id="1" language="java" name="ch19_Compositepattern.Compositefirstcode.Client" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch19_Compositepattern/Compositefirstcode/Client.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="147" y="134"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="ch19.Compositefirstcode.Component" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch19/Compositefirstcode/Component.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="290" y="162"/>    
+  <class id="2" language="java" name="ch19_Compositepattern.Compositefirstcode.Component" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch19_Compositepattern/Compositefirstcode/Component.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="388" y="165"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="ch19.Compositefirstcode.Leaf" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch19/Compositefirstcode/Leaf.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="292" y="380"/>    
+  <class id="3" language="java" name="ch19_Compositepattern.Compositefirstcode.Composite" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch19_Compositepattern/Compositefirstcode/Composite.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="658" y="322"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="ch19.Compositefirstcode.Client" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch19/Compositefirstcode/Client.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="95" y="161"/>    
+  <class id="4" language="java" name="ch19_Compositepattern.Compositefirstcode.Leaf" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch19_Compositepattern/Compositefirstcode/Leaf.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="391" y="418"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="5">    
-    <bendpoint x="499" y="162"/>    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="6" name="children"/>      
-      <multiplicity id="7" minimum="0" maximum="2147483647"/>    
+  <generalization id="5">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <dependency id="6">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <association id="7">    
+    <bendpoint x="653" y="165"/>    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="8" name="children"/>      
+      <multiplicity id="9" minimum="0" maximum="2147483647">        
+        <position height="17" width="24" x="574" y="121"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="8">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <dependency id="9">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="2"/>  
-  </dependency>  
-  <generalization id="10">    
-    <bendpoint x="291" y="295"/>    
+  <dependency id="10">    
     <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <generalization id="11">    
+    <bendpoint x="391" y="328"/>    
+    <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="2"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
