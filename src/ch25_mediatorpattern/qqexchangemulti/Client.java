@@ -12,10 +12,6 @@ public class Client {
         q1.addFriend(q2);
         q1.addFriend(q2);
         q1.addFriend(q2);
-        q1.addFriend(q2);
-        q1.addFriend(q2);
-        q1.addFriend(q2);
-        q1.addFriend(q2);
         q1.addFriend(q3);
         q2.addFriend(q1);
         q2.addFriend(q3);

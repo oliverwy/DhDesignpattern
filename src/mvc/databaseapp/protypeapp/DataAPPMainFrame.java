@@ -91,7 +91,7 @@ public class DataAPPMainFrame extends JFrame {
 	public void connectToDB() throws SQLException, ClassNotFoundException {
 		Class.forName("org.mariadb.jdbc.Driver");
 		final String URL = "jdbc:mariadb://localhost:3306/mydb?characterEncoding=UTF-8";
-		conn = DriverManager.getConnection(URL, "pmauser", "yzhi0788");
+		conn = DriverManager.getConnection(URL, "root", "yzhi0788");
 	}
 
 	private void setActionListener() {

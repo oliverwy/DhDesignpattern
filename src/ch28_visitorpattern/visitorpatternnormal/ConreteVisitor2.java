@@ -1,15 +1,20 @@
 package ch28_visitorpattern.visitorpatternnormal;
 
 public class ConreteVisitor2 extends Vistor {
-    @Override
-    public void visitConcreteElementA(Element concreteEelmentsA) {
-        // TODO Auto-generated method stub
-        System.out.printf("\n%s 被 %s 访问", concreteEelmentsA.getClass().getName(), this.getClass().getName());
-    }
+	public void visitElementTypeA(ElementTypeA concreteEelmentsA) {
+		// TODO Auto-generated method stub
+		System.out.printf("\n%s关注当前类型物品的名称：%s,还关心数量： %d", 
+				this.getClass().getName(), 
+				concreteEelmentsA.getName(),
+				concreteEelmentsA.getCount());
+	}
 
-    @Override
-    public void visitConcreteElementB(Element concreteEelmentsB) {
-        // TODO Auto-generated method stub
-        System.out.printf("\n%s 被 %s 访问", concreteEelmentsB.getClass().getName(), this.getClass().getName());
-    }
+	@Override
+	public void visitElementTypeB(ElementTypeB concreteEelmentsB) {
+		// TODO Auto-generated method stub
+		System.out.printf("\n%s关注当前类型物品的名称：%s,还关心价格： %f", 
+				this.getClass().getName(), 
+				concreteEelmentsB.getFeeName(),
+				concreteEelmentsB.getFeeCount());
+	}
 }

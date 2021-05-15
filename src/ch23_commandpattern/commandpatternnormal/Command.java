@@ -5,15 +5,17 @@ import java.util.List;
 
 public abstract class Command {
     protected Receiver receiver;
-
     public Command(Receiver receiver) {
         this.receiver = receiver;
     }
-
     abstract public void excute();
 }
 
-class Receiver {
+interface Receiver{
+	public void action();
+}
+
+class ConcreteReceiver implements Receiver {
     public void action() {
         System.out.println("执行请求");
     }

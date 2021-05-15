@@ -2,7 +2,7 @@ package ch23_commandpattern.commandpatternnormal;
 
 public class Client {
     public static void main(String[] args) {
-        Receiver receiver = new Receiver();
+        Receiver receiver = new ConcreteReceiver();
         Command c1 = new ConcreteCommand(receiver);
         Command c2 = new ConcreteCommand(receiver);
         Command c3 = new ConcreteCommand(receiver);

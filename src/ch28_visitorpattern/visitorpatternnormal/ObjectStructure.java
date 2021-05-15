@@ -4,18 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ObjectStructure {
-    private List<Element> elements = new ArrayList<Element>();
+    private List<ElementType> elements =
+    		new ArrayList<ElementType>();
 
-    public void attach(Element element) {
+    public void attach(ElementType element) {
         elements.add(element);
     }
 
-    public void detach(Element element) {
+    public void detach(ElementType element) {
         elements.remove(element);
     }
 
     public void display(Vistor visitor) {
-        for (Element p : elements) {
+        for (ElementType p : elements) {
             p.accept(visitor);
         }
     }

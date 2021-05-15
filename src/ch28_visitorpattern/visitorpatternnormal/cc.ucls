@@ -4,114 +4,114 @@
   <class id="1" language="java" name="ch28_visitorpattern.visitorpatternnormal.ObjectStructure" 
     project="DhDesignpattern" file="/DhDesignpattern/src/ch28_visitorpattern/visitorpatternnormal/ObjectStructure.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="331" y="335"/>    
+    <position height="-1" width="-1" x="330" y="336"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="ch28_visitorpattern.visitorpatternnormal.Element" project="DhDesignpattern" 
-    file="/DhDesignpattern/src/ch28_visitorpattern/visitorpatternnormal/Element.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="709" y="336"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="3" language="java" name="ch28_visitorpattern.visitorpatternnormal.ConcreteElementA" 
-    project="DhDesignpattern" file="/DhDesignpattern/src/ch28_visitorpattern/visitorpatternnormal/ConcreteElementA.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="600" y="459"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="4" language="java" name="ch28_visitorpattern.visitorpatternnormal.ConcreteElementB" 
-    project="DhDesignpattern" file="/DhDesignpattern/src/ch28_visitorpattern/visitorpatternnormal/ConcreteElementB.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="805" y="456"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="5" language="java" name="ch28_visitorpattern.visitorpatternnormal.Client" project="DhDesignpattern" 
+  <class id="2" language="java" name="ch28_visitorpattern.visitorpatternnormal.Client" project="DhDesignpattern" 
     file="/DhDesignpattern/src/ch28_visitorpattern/visitorpatternnormal/Client.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="337" y="86"/>    
+    <position height="-1" width="-1" x="326" y="77"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="ch28_visitorpattern.visitorpatternnormal.Vistor" project="DhDesignpattern" 
+  <class id="3" language="java" name="ch28_visitorpattern.visitorpatternnormal.Vistor" project="DhDesignpattern" 
     file="/DhDesignpattern/src/ch28_visitorpattern/visitorpatternnormal/Vistor.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="697" y="82"/>    
+    <position height="-1" width="-1" x="697" y="76"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="ch28_visitorpattern.visitorpatternnormal.ConreteVisitor2" 
+  <class id="4" language="java" name="ch28_visitorpattern.visitorpatternnormal.ConreteVisitor2" 
     project="DhDesignpattern" file="/DhDesignpattern/src/ch28_visitorpattern/visitorpatternnormal/ConreteVisitor2.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="810" y="221"/>    
+    <position height="-1" width="-1" x="843" y="214"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="ch28_visitorpattern.visitorpatternnormal.ConreteVisitor1" 
+  <class id="5" language="java" name="ch28_visitorpattern.visitorpatternnormal.ConreteVisitor1" 
     project="DhDesignpattern" file="/DhDesignpattern/src/ch28_visitorpattern/visitorpatternnormal/ConreteVisitor1.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="568" y="221"/>    
+    <position height="-1" width="-1" x="578" y="216"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="9">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="10" name="elements"/>      
-      <multiplicity id="11" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="12">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="6"/>  
+  <interface id="6" language="java" name="ch28_visitorpattern.visitorpatternnormal.ElementType" 
+    project="DhDesignpattern" file="/DhDesignpattern/src/ch28_visitorpattern/visitorpatternnormal/ElementType.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="701" y="338"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="7" language="java" name="ch28_visitorpattern.visitorpatternnormal.ElementTypeA" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch28_visitorpattern/visitorpatternnormal/ElementTypeA.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="546" y="501"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="ch28_visitorpattern.visitorpatternnormal.ElementTypeB" project="DhDesignpattern" 
+    file="/DhDesignpattern/src/ch28_visitorpattern/visitorpatternnormal/ElementTypeB.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="839" y="503"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="9">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
   </dependency>  
-  <dependency id="13">    
+  <generalization id="10">    
     <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <generalization id="14">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="2"/>  
+    <end type="TARGET" refId="3"/>  
   </generalization>  
-  <generalization id="15">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <generalization id="16">    
+  <realization id="11">    
     <end type="SOURCE" refId="8"/>    
     <end type="TARGET" refId="6"/>  
-  </generalization>  
-  <generalization id="17">    
+  </realization>  
+  <association id="12">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="13" name="elements"/>      
+      <multiplicity id="14" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="15">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <realization id="16">    
     <end type="SOURCE" refId="7"/>    
     <end type="TARGET" refId="6"/>  
+  </realization>  
+  <generalization id="17">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    

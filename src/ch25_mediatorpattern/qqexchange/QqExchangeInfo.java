@@ -2,9 +2,7 @@ package ch25_mediatorpattern.qqexchange;
 
 public interface QqExchangeInfo {
     public void addFriend(QQUser freind);
-
     public void sendMessage(String freMessage);
-
     public void displayInfo();
 }
 
@@ -12,7 +10,6 @@ class QQUser implements QqExchangeInfo {
     private String reciveMessage;
     private String name;
     private QQUser fri;
-
     public String getName() {
         return name;
     }
