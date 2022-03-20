@@ -7,9 +7,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Sqlserver {
+public class MySQLServer {
 	private Connection conn;
-	public Sqlserver() {
+	public MySQLServer() {
 		connectToDB();
 	}
 	public void connectToDB() {
@@ -25,7 +25,6 @@ public class Sqlserver {
 			e.printStackTrace();
 		}
 	}
-
 	public void insert(User user) {
 		String sql = "insert into user values (?,?);";
 		PreparedStatement ps;
@@ -42,7 +41,6 @@ public class Sqlserver {
 			e1.printStackTrace();
 		}
 	}
-
 	public User getUser(int id) {
 		System.out.println("将条件的信息转换成 where SQL");
 		System.out.println("select * from user");

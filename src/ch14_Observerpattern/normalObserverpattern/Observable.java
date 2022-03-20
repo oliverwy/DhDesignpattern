@@ -1,20 +1,14 @@
 package ch14_Observerpattern.normalObserverpattern;
 
-public abstract class Subject {
-
-    protected String SubjectState;
-
+public abstract class Observable  {
+    protected String State;
     public abstract void attach(Observer observer);
-
     public abstract void detach(Observer observer);
-
     public abstract void notifys();
-
     public String getSubjectState() {
-        return SubjectState;
+        return State;
     }
-
     public void setSubjectState(String subjectState) {
-        SubjectState = subjectState;
+        State = subjectState;
     }
 }

@@ -24,59 +24,59 @@ interface IDFactory {
 	public IDeparmentOperate createDepatentEntity();
 }
 
-class SqlserverDFactory implements IDFactory {
+class MySQLServerDFactory implements IDFactory {
 
 	private Connection con;
-	public SqlserverDFactory() {
+	public MySQLServerDFactory() {
 		super();
 		connectToDb();
 	}
 	@Override
 	public void connectToDb() {
-		System.out.println("连接到SQLserver数据库");
+		System.out.println("连接到MySQL数据库");
 	}
 	@Override
 	public IDeparmentOperate createDepatentEntity() {
-		return new SqlserverDepartmentEntity();
+		return new MySQLDepartmentEntity();
 	}
 }
 
-class AccessDFactory implements IDFactory {
+class PostgreMySQLDFactory implements IDFactory {
 
 	private Connection con;
-	public AccessDFactory() {
+	public PostgreMySQLDFactory() {
 		super();
 		connectToDb();
 	}
 	@Override
 	public void connectToDb() {
-		System.out.println("连接到Access数据库");
+		System.out.println("连接到PostgreSQL数据库");
 	}
 	@Override
 	public IDeparmentOperate createDepatentEntity() {
-		return new AccessDepartmentEntity();
+		return new PostgreSQLDepartmentEntity();
 	}
 }
 public interface IDeparmentOperate {
 	public void insert(Department department);
 	public Department getDepartment(int id);
 }
-class SqlserverDepartmentEntity implements IDeparmentOperate {
+class MySQLDepartmentEntity implements IDeparmentOperate {
     @Override
     public void insert(Department deparment) {
-        System.out.println("在SQLserver中添加一条Deparment记录");
+        System.out.println("在MySQL中添加一条Deparment记录");
     }
     @Override
     public Department getDepartment(int id) {
-        System.out.println("在SQLserver中根据ID得到Deparment表的一条记录");
+        System.out.println("在MySQL中根据ID得到Deparment表的一条记录");
         return null;
     }
 }
 
-class AccessDepartmentEntity implements IDeparmentOperate {
+class PostgreSQLDepartmentEntity implements IDeparmentOperate {
     @Override
     public void insert(Department deparment) {
-        System.out.println("在Access中添加一条Deparment记录");
+        System.out.println("在PostgreSQL中添加一条Deparment记录");
     }
     @Override
     public Department getDepartment(int id) {

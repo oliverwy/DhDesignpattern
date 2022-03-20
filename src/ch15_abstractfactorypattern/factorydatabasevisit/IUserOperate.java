@@ -12,69 +12,67 @@ interface IFactory {
     public IUserOperate createUserEntity();
 }
 
-class SqlserverUserEntity implements IUserOperate {
+class MySQLSqlserverUserEntity implements IUserOperate {
     @Override
     public void insert(User user) {
-        System.out.println("在SQLserver中添加一条记录");
+        System.out.println("在MySQL中添加一条记录");
     }
 
     @Override
     public User getUser(int id) {
-        System.out.println("在SQLserver中根据ID得到User表的一条记录");
+        System.out.println("在MySQL中根据ID得到User表的一条记录");
         return null;
     }
 }
 
-class AccessUserEntity implements IUserOperate {
+class PostgreSQLServerUserEntity implements IUserOperate {
 
 	@Override
     public void insert(User user) {
-        System.out.println("在Access中添加一条记录");
+        System.out.println("在PostgreSQL中添加一条记录");
     }
 
     @Override
     public User getUser(int id) {
-        System.out.println("在AAcesss中根据ID得到User表的一条记录");
+        System.out.println("在PostgreSQL中根据ID得到User表的一条记录");
         return null;
     }
 }
 
-class SqlserverFactory implements IFactory {
-	public SqlserverFactory() {
+class MySQLServerFactory implements IFactory {
+	public MySQLServerFactory() {
 		super();
 		connectToDb();
 	}
 	private Connection conn;
 	public void connectToDb() {
 //		配置链接数据库的信息
-		 System.out.println("连接到SQLServer数据库");
+		 System.out.println("连接到MySQL数据库");
 		
 	}
  	@Override
 	public IUserOperate createUserEntity() {
-		return new SqlserverUserEntity();
+		return new MySQLSqlserverUserEntity();
 	}
 
 }
 
-class AccessFactory implements IFactory {
+class PostgreSQLServerFactory implements IFactory {
 	private Connection conn;
 	@Override
 	public void connectToDb() {
-		 System.out.println("连接到ACCESS数据库");
+		 System.out.println("连接到PostgreSQL数据库");
 	}
 
-	public AccessFactory() {
+	public PostgreSQLServerFactory() {
 		super();
 		connectToDb();
 	}
 
 	@Override
 	public IUserOperate createUserEntity() {
-		return new AccessUserEntity();
+		return new PostgreSQLServerUserEntity();
 	}
-
- 
 }
 
 class User {

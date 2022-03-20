@@ -1,7 +1,7 @@
 package ch15_abstractfactorypattern.suitdemo.independentfactory;
 
 public class ClothingStore {
-//混合商店
+//杂货店 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ShoesFactory shoesf=null;
