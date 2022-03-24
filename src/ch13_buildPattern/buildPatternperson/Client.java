@@ -16,12 +16,14 @@ public class Client {
                 super.paint(graphics);// 必须先调用父类的paint方法
                 PersonBuilder btp = new BuilderThinPerson(
                         (Graphics2D) graphics, 2, Color.BLUE);
-                PersonDirector pdthin = new PersonDirector(btp);
-                pdthin.CreatePerson();
+                PersonDirector pd= new PersonDirector();
+                pd.setPb(btp);
+                pd.CreatePerson();
                 PersonBuilder bfp = new BuildFatPerson(
                         (Graphics2D) graphics, 5, Color.RED);
-                PersonDirector pdFat = new PersonDirector(bfp);
-                pdFat.CreatePerson();
+                pd.setPb(bfp);
+                pd.CreatePerson();
+                
             }
         };
         jFrame.add(jpanel);// 将绘有小人图像的画板嵌入到相框中

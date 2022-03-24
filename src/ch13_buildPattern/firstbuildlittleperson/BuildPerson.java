@@ -2,14 +2,13 @@ package ch13_buildPattern.firstbuildlittleperson;
 
 import java.awt.*;
 
-class BuildFatPerson {
+class BuildPerson {
     private Graphics g;
 
-    public BuildFatPerson(Graphics g) {
+    public BuildPerson(Graphics g) {
         super();
         this.g = g;
     }
-
     public void buildThin() {
         g.drawOval(100, 70, 30, 30);// 头部（画圆形）
         g.drawRect(105, 100, 20, 30);// 身体（画矩形）
@@ -18,7 +17,6 @@ class BuildFatPerson {
         g.drawLine(105, 130, 75, 150);// 左腿（画直线）
         g.drawLine(125, 130, 150, 150);// 右腿（画直线）
     }
-
     public void buildFat() {
         g.setColor(Color.RED);
         Graphics2D g2 = (Graphics2D) g;

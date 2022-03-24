@@ -1,11 +1,11 @@
 package ch13_buildPattern.buildPatternperson;
 
 class PersonDirector {
-    private PersonBuilder pb;
 
-    public PersonDirector(PersonBuilder pb) {
+	private PersonBuilder pb;
+
+    public PersonDirector() {
         super();
-        this.pb = pb;
     }
 
     public void CreatePerson() {
@@ -17,4 +17,12 @@ class PersonDirector {
         pb.buildLegRight();
         pb.buildTail();
     }
+    public PersonBuilder getPb() {
+		return pb;
+	}
+
+	public void setPb(PersonBuilder pb) {
+		this.pb = pb;
+	}
+
 }
