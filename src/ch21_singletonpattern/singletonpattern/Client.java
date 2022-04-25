@@ -1,6 +1,6 @@
 package ch21_singletonpattern.singletonpattern;
 
-public abstract class Client {
+public class Client {
     public static void main(String[] args) {
         Singleton s1 = Singleton.getInstance();
         Singleton s2 = Singleton.getInstance();
@@ -11,8 +11,8 @@ public abstract class Client {
         if (s1 == s2) {
             System.out.println("两个示例对象相同");
         }
-        System.out.println(s1.getInstanceID());
-        System.out.println(s2.getInstanceID());
-        System.out.println(s3.getInstanceID());
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
     }
 }

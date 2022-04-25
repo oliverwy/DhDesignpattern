@@ -1,4 +1,4 @@
-package ch17_adapterpattern.iphone7;
+package ch17_adapterpattern.matephone;
 
 //耳机插入到圆孔就能听歌
 public class Earphone implements Circle {

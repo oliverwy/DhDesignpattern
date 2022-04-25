@@ -9,5 +9,8 @@ public abstract class Client {
         if (s1 == s2) {
             System.out.println("两个示例对象相同");
         }
+        System.out.println(s1);
+        System.out.println(s2);
+
     }
 }

@@ -16,6 +16,7 @@ public class ConcreteTvIterator implements TvIterator {
             i = 0;
         if (i > aggregate.count())
             i = aggregate.count() - 1;
+        current=i;
         return aggregate.getChanel(i);
     }
 
