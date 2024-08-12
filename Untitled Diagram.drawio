@@ -269,6 +269,24 @@
             <mxPoint x="440" y="410" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="l1RVXC4RBP18zVJXkCvL-45" value="试题" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="285" y="700" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l1RVXC4RBP18zVJXkCvL-47" value="大题1" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="660" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l1RVXC4RBP18zVJXkCvL-48" value="大题2" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="190" y="660" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l1RVXC4RBP18zVJXkCvL-49" value="........." style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="270" y="660" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l1RVXC4RBP18zVJXkCvL-50" value="大题n" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="360" y="660" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l1RVXC4RBP18zVJXkCvL-51" value="试题1" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="610" width="40" height="20" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
