@@ -1030,28 +1030,52 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="nKtAwepz18MTZmeOOANp-1" value="基础数据设定：录入学校、课程类别及性质、院系、专业、班级、试卷来源、考试方式、阅卷方式、试题类型、平时成绩项目等等" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="275" y="1238" width="268" height="60" as="geometry" />
+          <mxGeometry x="275" y="1238" width="268" height="52" as="geometry" />
         </mxCell>
         <mxCell id="nKtAwepz18MTZmeOOANp-2" value="根据培养计划，确定毕业要求及其指标点" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="276" y="1340" width="268" height="60" as="geometry" />
+          <mxGeometry x="275" y="1315" width="268" height="58" as="geometry" />
         </mxCell>
         <mxCell id="5hmdlO8OZ3-nnkNlXf64-1" value="根据大纲：录入课程、课程目标、设置课程目标指标点关联" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="276" y="1428" width="268" height="60" as="geometry" />
+          <mxGeometry x="276" y="1400" width="268" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="5hmdlO8OZ3-nnkNlXf64-2" value="录入试卷基本信息，平时成绩项目信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="276" y="1527" width="268" height="60" as="geometry" />
+        <mxCell id="5hmdlO8OZ3-nnkNlXf64-2" value="录入试卷基本信息设置小题和指标点管理、平时项目小环节和课程目标或指标点关联" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="276" y="1490" width="268" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5hmdlO8OZ3-nnkNlXf64-3" value="生成试卷命题审核表、过程考核环节审核表" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="276" y="1629" width="268" height="60" as="geometry" />
+          <mxGeometry x="276" y="1591" width="268" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5hmdlO8OZ3-nnkNlXf64-5" value="批准？" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="333" y="1711" width="174" height="47" as="geometry" />
+          <mxGeometry x="323" y="1681" width="174" height="47" as="geometry" />
         </mxCell>
         <mxCell id="5hmdlO8OZ3-nnkNlXf64-7" value="录入/导入学生各项成绩" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="276" y="1777" width="268" height="60" as="geometry" />
+          <mxGeometry x="276" y="1754" width="268" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5hmdlO8OZ3-nnkNlXf64-8" value="生成试卷质量分析报告、课程达成度度报告、达成度详细分析j数据" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="276" y="1875" width="268" height="60" as="geometry" />
+          <mxGeometry x="276" y="1844" width="268" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5hmdlO8OZ3-nnkNlXf64-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="nKtAwepz18MTZmeOOANp-1" target="nKtAwepz18MTZmeOOANp-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="383" y="1598" as="sourcePoint" />
+            <mxPoint x="409" y="1313" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5hmdlO8OZ3-nnkNlXf64-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="nKtAwepz18MTZmeOOANp-2" target="5hmdlO8OZ3-nnkNlXf64-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="136" y="1417" as="sourcePoint" />
+            <mxPoint x="186" y="1367" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5hmdlO8OZ3-nnkNlXf64-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5hmdlO8OZ3-nnkNlXf64-1" target="5hmdlO8OZ3-nnkNlXf64-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="95" y="1500" as="sourcePoint" />
+            <mxPoint x="145" y="1450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5hmdlO8OZ3-nnkNlXf64-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5hmdlO8OZ3-nnkNlXf64-2" target="5hmdlO8OZ3-nnkNlXf64-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="152" y="1587" as="sourcePoint" />
+            <mxPoint x="202" y="1537" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
