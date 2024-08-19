@@ -1030,13 +1030,28 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="nKtAwepz18MTZmeOOANp-1" value="基础数据设定：录入学校、课程类别及性质、院系、专业、班级、试卷来源、考试方式、阅卷方式、试题类型、平时成绩项目等等" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="279" y="1236" width="268" height="60" as="geometry" />
+          <mxGeometry x="275" y="1238" width="268" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nKtAwepz18MTZmeOOANp-2" value="根据培养计划，确定毕业要求及其指标点" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="276" y="1334" width="268" height="60" as="geometry" />
+          <mxGeometry x="276" y="1340" width="268" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="5hmdlO8OZ3-nnkNlXf64-1" value="根据大纲：录入毕业要求及其指标点" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="5hmdlO8OZ3-nnkNlXf64-1" value="根据大纲：录入课程、课程目标、设置课程目标指标点关联" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="276" y="1428" width="268" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5hmdlO8OZ3-nnkNlXf64-2" value="录入试卷基本信息，平时成绩项目信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="276" y="1527" width="268" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5hmdlO8OZ3-nnkNlXf64-3" value="生成试卷命题审核表、过程考核环节审核表" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="276" y="1629" width="268" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5hmdlO8OZ3-nnkNlXf64-5" value="批准？" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="333" y="1711" width="174" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="5hmdlO8OZ3-nnkNlXf64-7" value="录入/导入学生各项成绩" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="276" y="1777" width="268" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5hmdlO8OZ3-nnkNlXf64-8" value="生成试卷质量分析报告、课程达成度度报告、达成度详细分析j数据" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="276" y="1875" width="268" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
