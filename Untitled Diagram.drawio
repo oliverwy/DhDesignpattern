@@ -1032,6 +1032,9 @@
         <mxCell id="nKtAwepz18MTZmeOOANp-1" value="基础数据设定：录入学校、课程类别及性质、院系、专业、班级、试卷来源、考试方式、阅卷方式、试题类型、平时成绩项目等等" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="279" y="1236" width="268" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="nKtAwepz18MTZmeOOANp-2" value="根据大纲：录入毕业要求及其指标点" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="276" y="1334" width="268" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
